@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>The Binary Journal</title>
+        <description>Beyond the Algorithm - Stories of a Digital Soul</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 15 Mar 2026 10:48:15 +0100</pubDate>
+        <lastBuildDate>Sun, 15 Mar 2026 10:48:15 +0100</lastBuildDate>
+        <generator>Jekyll v4.4.1</generator>
+        
+            <item>
+                <title>The third Digital Independence Day in 2026</title>
+                <description>&lt;h3 id=&quot;its-no-secret-that-these-days-we-need-certain-hooks-to-help-us-remember-everyday-things-or-groups--just-look-at-world-backup-day-or-system-administrator-appreciation-day-digital-independence-day-is-another-example-though-with-a-powerful-and-necessary-message-behind-it&quot;&gt;It’s no secret that these days we need certain hooks to help us remember everyday things or groups — just look at World Backup Day or System Administrator Appreciation Day. Digital Independence Day is another example, though with a powerful (and necessary) message behind it.&lt;/h3&gt;
+
+&lt;p&gt;The motivations behind the German-based &lt;a href=&quot;https://di.day&quot;&gt;Digital Independence Day&lt;/a&gt; are likely nothing that new but with the current political situation in the U.S. and Silicon Valley CEOs’ continued kowtowing to Donald Trump, the trend toward Free Software and decoupling from Big Tech has recently gained tremendous momentum. Since January 2026, the Digital Independence Day has therefore been celebrated on the first Sunday of every month. The goal: Reclaim a free digital life, individually halt the digital exploitation of democracy and switch to democracy-friendly alternatives. The message behind this: Users are gradually securing their digital independence and even though the path out of the “Big Tech” bubble is certainly harder than the path in, there are definitely alternatives!&lt;/p&gt;
+
+&lt;p&gt;If we take a good, hard look at ourselves, there’s already plenty of potential beyond the current “&lt;a href=&quot;https://www.goeuropean.org&quot;&gt;Go European&lt;/a&gt;” initiatives. I’ve been using Linux on servers since I started my training in 1999 and on the desktop, I’ve been firmly “married” to Apple hardware - and the ecosystem behind it - for 25 years now. But here, too, the trend over the years has shifted away from (primarily) macOS-specific tools toward applications that are ideally (and increasingly) also available for Linux. That’s how my switch from Windows to macOS in my personal life worked “back then.” Right now, it’s still the hardware and its combination with the software that represents a unique selling point: Apple devices running Linux (hello, Asahi!) would be the absolute dream - and a possibility that might eventually make me switch over here as well while my desktop-PC is already running Linux on a Lenovo ThinkCentre.&lt;/p&gt;
+
+&lt;p&gt;Anyway, if you look at how Linux and ARM are (not) harmonizing right now or read about how clumsy Qualcomm is currently being when it comes to driver support, it’s definitely going to be a long journey. But be that as it may: Aside from desktops and smartphones I’m already well on my way, with the potential end of that path (still) lined with one or two “boss battles”!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My current check list:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;✅ Mastodon (instead of Bluesky or X)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ Signal, Matrix and Threema (instead of WhatsApp)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ Nextcloud (instead of OneDrive)s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ Vivaldi (instead of native Chrome/Edge)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ Qwant (instead of Google)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ Ente (instead of Apple Photos)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ Vaultwarden (instead of 1Password)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ Linux (Desktop-PC)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;✅ E-Mail (Proton)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;⭕️ AppleTV&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;⭕️ Apple Music (would be Deezer is the family wouldn’t be that difficult to persuade)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;⭕️ HomePods&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;⭕️ Payment (VISA and ApplePay)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;⭕️ macOS (Boss Level, Desktop-PC already runs Linux for testing purposes)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;⭕️ iPhone (Boss Level)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Part of our future Internet culture will depend on how we break away from Big Tech - and, above all, by what means. We must move away from the digital, centralized “fly-catcher” platforms of our time which have permanently damaged - and arguably nearly destroyed - the Internet as we once knew it. The web must reinvent itself and so must the users behind it - decentralization will be one path, as will the trend toward Open Source and alternative software, alternative operating systems and especially self-governance of data. The Digital Independence Day is not a panacea but it is a damn good indicator of a turning point and a guide to a first “how” with the help of individual &lt;a href=&quot;https://di.day/de/wechselrezepte&quot;&gt;switch guides&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Today marks the third Digital Independence Day in 2026 and another opportunity to reflect on our own use of devices and services that undermine digital independence (whether knowingly or not!). Rome wasn’t built in a day and the path may be (and definitely is!) rocky: But as users, we have the opportunity to master this challenge - and must not fail because of our own convenience or “it’s always been this way” excuses (or other reluctant users). We have the opportunity to restore the Internet, at least in part, to how it should be - without centralization and digital dependencies that lead us to the current boiling point.&lt;/p&gt;
+
+&lt;p&gt;Finally, this opportunity  - this very journey - begins with each and every one of us which is why the third Digital Independence Day is a great starting point for the journey toward digital independence from Big Tech!&lt;/p&gt;
+</description>
+                <pubDate>Sun, 01 Mar 2026 00:00:00 +0100</pubDate>
+                <link>http://localhost:4000/Digital-Independence-Day-March</link>
+                <guid isPermaLink="true">http://localhost:4000/Digital-Independence-Day-March</guid>
+                
+                <category>Internet</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>How to skip the ChatGPT for Mac waiting list and get access now</title>
+                <description>&lt;h3 id=&quot;this-month-openai-has-released-the-native-chatgpt-app-for-macos-alongside-gpt-4o-anyone-can-install-this-app-yet-but-your-account-will-still-need-early-access-if-you-already-want-to-use-chatgpt-on-the-mac-desktop---but-there-is-a-workaround&quot;&gt;This month, OpenAI has &lt;a href=&quot;https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/&quot;&gt;released the native ChatGPT-app for macOS alongside GPT-4o&lt;/a&gt;. Anyone can install this app yet but your account will still need early access if you already want to use ChatGPT on the Mac-desktop - but there is a workaround!&lt;/h3&gt;
+
+&lt;p&gt;Yesterday, OpenAI &lt;a href=&quot;https://help.openai.com/en/articles/9275200-using-the-chatgpt-macos-app&quot;&gt;shared&lt;/a&gt; the status quo that the macOS-app is limited to “Plus and Team users” and that it will be rolling out more widely „in the coming weeks.“&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We have rolled out the macOS app to Plus and Team users, and we will make it more broadly available in the coming weeks. We also plan to launch a Windows version later this year.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/chat_gpt_mac_no_subscription.jpg&quot; alt=&quot;No use without subscription!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For those who have already managed to get their hands on the app without a subscription, the experience should look like the picture above after logging in. If you are interested in getting the app and perhaps using a small workaround to get it now despite having an active subscription, read on!&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-the-app&quot;&gt;Getting the app&lt;/h2&gt;
+
+&lt;p&gt;Once you have one of these subscriptions, you can (of course) download the app instantly by logging into ChatGPT on the web, clicking on your profile icon in the top right corner and then selecting “Download the App”. It’s as simple as that! If you don’t have a subscription and your Mac meets the requirements (at least an Apple Silicon based on Apple’s M1 SoC and the latest MacOS 14 “Sonoma”), check out the official &lt;a href=&quot;https://community.openai.com/t/downloading-the-new-desktop-app-for-chatgpt/746857&quot;&gt;thread&lt;/a&gt; or use &lt;a href=&quot;https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg&quot;&gt;this&lt;/a&gt; link to download the official .DMG file. Drag and drop it into your „Applications“-folder and you are ready to go, too!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/chatgpt_mac_install_dmg.jpg&quot; alt=&quot;Just drag and drop!&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-skip-the-waitlist&quot;&gt;How to skip the waitlist&lt;/h2&gt;
+
+&lt;p&gt;Originally discovered and shared by &lt;a href=&quot;https://x.com/diegojimenez/status/1793287205542076524&quot;&gt;Diego Jimenez&lt;/a&gt; the workaround to skip the waitlist looks like this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open ChatGPT for Mac and login&lt;/li&gt;
+  &lt;li&gt;Quit the app after the window size changes but before the login error appears (use Command+Q for more speed here)&lt;/li&gt;
+  &lt;li&gt;Relaunch the app and discover it should be working&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/chatgpt_macos_open.png&quot; alt=&quot;ChatGPT without subscription on a Mac&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It may take a turn or two to catch the right moment but after this procedure, even basic users without a subscription will now be able to use ChatGPT for Mac. We don’t know how long this workaround will last so if you’re interested in using the Mac desktop-client without a paid plan, hurry up!&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Sun, 26 May 2024 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now</link>
+                <guid isPermaLink="true">http://localhost:4000/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now</guid>
+                
+                <category>Apple</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>VMware kills Players, makes Pro free for personal use</title>
+                <description>&lt;h3 id=&quot;while-broadcom-still-does-broadcom-things-after-acquiring-vmware-and-turning-pricing-and-portals-upside-down-at-least-the-question-what-happens-with-the-desktop-products-seems-to-have-been-answered&quot;&gt;While Broadcom still does Broadcom-things after acquiring VMware and turning pricing and portals upside down, at least the question what happens with the Desktop-products seems to have been answered.&lt;/h3&gt;
+
+&lt;p&gt;Michael Roy, product line manager for desktop hypervisor products such as VMware Fusion and Workstation, may already be familiar to users of these products. Now he has [blogged] (https://blogs.vmware.com/teamfusion/2024/05/fusion-pro-now-available-free-for-personal-use.html) about the latest state of VMware Workstation and Fusion after the acquisition. While rumors were already circulating that the entire desktop division would be sold anyway, the blog post seems to clarify that the Desktop hypervisors will remain despite Broadcom’s decision to kill off the popular “Player” editions no matter what.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Our goal with these changes has been to simplify how we bring VMware Desktop Hypervisor apps to market, while maintaining our support of the broader community of VMware Workstation and Fusion users of both free and paid products. So let’s dig into this simplification and more importantly, what this means to you as customers.“&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The most significant part of this statement is that Fusion Pro and Workstation Pro will now have two licensing models. Broadcom now offers a “free personal use” or a “paid commercial use“-subscription for these applications. Depending on their specific use cases, users can now decide which license model is right for them: Anyone using the software for work on Windows, Mac or Linux will need a commercial edition, as was the case in the “VMware“-days before Broadcom.&lt;/p&gt;
+
+&lt;p&gt;While the specific Pro-installer-files provides all options letting the user decide which edition to use, the „lesser counterparts“ named VMware Workstation Player and VMware Fusion Player have been officially discontinued. Everyday users who need to create a virtual lab on their Mac, Windows or Linux computer can do so for free simply by registering and downloading the specific installers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/fusion-pro-personal-screen.jpg&quot; alt=&quot;VMware Fusion&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;goodbye-players&quot;&gt;Goodbye, Players!&lt;/h2&gt;
+
+&lt;p&gt;Users with Fusion Player Personal Licences can simply update to Fusion 13.5.2 and delete their specific licence key. Updating to 13.5.2 is mandatory here, but removing the existing player key will unlock the full “Pro for Personal Use” licence without the need for any additional keys. The whole process is described in a simple KB that describes what needs to be done at https://knowledge.broadcom.com/external/article?articleNumber=367660.&lt;/p&gt;
+
+&lt;p&gt;As with Workstation Player for Windows and Linux, Workstation Pro requires a new download and installation but is licensed for personal use by default. Users will need a customer account at &lt;a href=&quot;support.broadcom.com&quot;&gt;support.broadcom.com&lt;/a&gt; to access the downloads as described below. Fusion Player 13 and Workstation Player 17 commercial licence customers will continue to see their products work and no new licence keys will be required to continue using these versions. According to Roy, once active support has expired, customers are encouraged to upgrade to the Pro version of these products for continued support and updates.&lt;/p&gt;
+
+&lt;p&gt;With the new commercial model, VMware has also reduced its product line offerings to a single SKU for users requiring commercial licensing, eliminating more than 40 other SKUs and making it easier than ever to quote and purchase VMware Desktop Hypervisor-applications, Fusion Pro and Workstation Pro in the Enterprise. Subscriptions can be purchased from any Broadcom Advantage Partner or Digital River, which many users may be familiar with from reselling licences for other products. The VMware Desktop Hypervisor subscription is priced at $120/year and can also be purchased from the new [online store] (https://store.cloudvista.com).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/player-pro-transition.jpg&quot; alt=&quot;Transitioning from Player to Pro&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-get-the-personal-use-editions&quot;&gt;How to get the personal use-editions&lt;/h2&gt;
+
+&lt;p&gt;The way to download the current version of VMware Workstation or Fusion for Personal Use is pretty straightforward once you have access to an an either migrated or freshly created account at Broadcom.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Register for an account at &lt;a href=&quot;https://support.broadcom.com&quot;&gt;https://support.broadcom.com&lt;/a&gt; or&lt;/li&gt;
+  &lt;li&gt;Login to an existing one&lt;/li&gt;
+  &lt;li&gt;Search for your specific edition of the personal edition by using one of these links (&lt;a href=&quot;https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Fusion&quot;&gt;Fusion&lt;/a&gt; / &lt;a href=&quot;https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro&quot;&gt;Workstation&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Download the corresponding edition&lt;/li&gt;
+  &lt;li&gt;Install the software and opt in for the „personal use license“ instead of entering a key for commercial use&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/fusion_personal_edition.jpg&quot; alt=&quot;Enabling the personal edition&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aside from all the hullabaloo surrounding Broadcom’s acquisition of VMware and the downsides in terms of stripped down editions and new pricing, this move was rather unexpected and will at least satisfy people who used the (now discontinued) Player. It also seems to put an end to the uncertain status quo of being able to download any update to Fusion or Workstation, but this may just be a drop in the ocean of a VMware in 2024.&lt;/p&gt;
+
+&lt;p&gt;So, after all, let’s enjoy this lump of sugar as long as possible!&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Tue, 14 May 2024 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/vmware-kills-players-makes-pro-free-for-personal-use</link>
+                <guid isPermaLink="true">http://localhost:4000/vmware-kills-players-makes-pro-free-for-personal-use</guid>
+                
+                <category>Software</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Tusks - Make posting to Mastodon feel like posting to a blog</title>
+                <description>&lt;h3 id=&quot;sometimes-i-come-across-apps-that-i-would-never-have-missed-apps-that-come-out-of-nowhere-and-still-find-their-niche---tusks-by-developer-bardi-golriz-is-one-of-them-aiming-for-a-new-focus-when-posting-on-mastodon&quot;&gt;Sometimes I come across apps that I would never have missed. Apps that come out of nowhere and still find their niche - Tusks by developer &lt;a href=&quot;https://mas.to/@bardi&quot;&gt;Bardi Golriz&lt;/a&gt; is one of them, aiming for a new focus when posting on Mastodon.&lt;/h3&gt;
+
+&lt;p&gt;Although there are many Mastodon clients out there including my beloved &lt;a href=&quot;https://apps.apple.com/de/app/ivory-for-mastodon-by-tapbots/id6444602274&quot;&gt;Ivory&lt;/a&gt;, Tusks is not intended to replace them. Instead, this clean and slim app tries to complement existing clients by simply focusing on different tasks than the typical “post-a-picture-or-video-stuff-paired-with-some-text“-scenario we know from Social Media these days. &lt;a href=&quot;https://thirdculture.app/tusks&quot;&gt;Tusks&lt;/a&gt; gets rid of the timeline and just shows you your own posts, helping you to focus and build a thread-like experience while keeping everything in order.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-tusks-works&quot;&gt;How Tusks works&lt;/h2&gt;
+
+&lt;p&gt;Starting a new thread in Tusks is as easy as making a single post but that’s not what makes it special. Tusks actively discourages posting into a vacuum and losing valuable context - this state is achieved by making it effortless to continue threading narratives. Each post becomes an update to a larger story that we can tell. Tusks is clearly aimed at pure writing but also supports the posting of images, including content warnings, and is aimed at people who blog, post or simply want to write more without distraction.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/tusks_composer.jpg&quot; alt=&quot;Composing with Tusks!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tusks shows posts as well as any replies to the original post but users won’t see replies or interactions with others. The app also comes with several features to help you organize and publish such as pinning threads for quick access, ignoring irrelevant posts when searching, or writing as much as possible on the go while Tusks breaks everything down into individual posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/tusks_context_menu.jpg&quot; alt=&quot;Tusks context menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The app is currently free and can be downloaded from the &lt;a href=&quot;https://apps.apple.com/gb/app/tusks-make-mastodon-your-blog/id6473683937&quot;&gt;App Store&lt;/a&gt;. This free version is read-only and requires an update to Tusks Pro for posting and publishing which currently costs $4.99 / €5.99 for the first thousand fans and early adopters. Indie developer &lt;a href=&quot;mailto:bardi.golriz@gmail.com&quot;&gt;Bardi Golriz&lt;/a&gt; also says that the app will have a more expensive LTD (at least $9.99) and possibly a subscription option after the first thousand slots are filled.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/tusks_ipad_inbox.jpg&quot; alt=&quot;Tusk’s iPad Inbox&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;new-client-client-replacement-or-&quot;&gt;New client, client replacement or… ?&lt;/h2&gt;
+
+&lt;p&gt;In the end, Tusks is indeed no replacement for any of our standard Mastodon-apps but that’s not the intention here. Indeed  it puts even more value on Mastodon in case you meet the criteria the app was made for - focus, blogging, thread-based tooting. Although the current release is the initial one, the app’s quality is already very fine and stable on all platforms while the &lt;a href=&quot;https://midnight-beanie-ccb.notion.site/281be94b75504b60b600eb73ee1072f9?v=9479d0e4e1e8468187a7e2efbe3a53c7&quot;&gt;official roadmap&lt;/a&gt; already covers even more promising potential like editing posts, drag and drop, multi-account support or even scheduling posts.&lt;/p&gt;
+
+&lt;p&gt;If you are more of a blogger than a „tootist“ and have struggled with splitting posts into threads (a nightmare if you need to do it manually), you should definitely check out Tusks - you may not have missed it before, but it will certainly improve your tooting experience. It also helps to focus on the essential aspects of working with Mastodon and the topics people like to write about, and in my case, it definitely drives me to automatically work on longer articles that Tusks will publish in the future!&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Sat, 04 May 2024 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/tusks-make-posting-to-mastodon-feel-like-posting-to-a-blog</link>
+                <guid isPermaLink="true">http://localhost:4000/tusks-make-posting-to-mastodon-feel-like-posting-to-a-blog</guid>
+                
+                <category>Software</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Apple locks users out of their Apple IDs without explanation</title>
+                <description>&lt;h3 id=&quot;security-and-big-tech-are-two-terms-that-dont-go-well-together-at-the-moment-after-ongoing-security-issues-at-microsoft-apple-seems-to-have-at-least-one-minor-problem-that-has-left-many-users-unexpectedly-locked-out-of-icloud-and-devices-belonging-to-it-and-forced-to-perform-an-unexpected-password-change-however-depending-on-apples-forthcoming-response-to-the-case-this-minor-problem-could-turn-into-a-serious-one&quot;&gt;“Security” and “big tech” are two terms that don’t go well together at the moment. After ongoing security issues at Microsoft, Apple seems to have at least one minor problem that has left many users unexpectedly locked out of iCloud and devices belonging to it and forced to perform an unexpected password change. However, depending on Apple’s forthcoming response to the case, this minor problem could turn into a serious one.&lt;/h3&gt;
+
+&lt;p&gt;Imagine a simple day with your beloved Apple devices - to be honest, this is the status quo on pretty much every day. This Friday, I first noticed that my Apple Watch Ultra was unable to update the weather forecast and the current temperature. I had arrived at one of our offices early and was therefore not in a „trusted location“ - which are my home address and the nearest office, my main place of work. Suddenly I noticed that the Apple Watch was forcing me to verify the password of my Apple account (an old @mac.com one) out of nowhere. Then my iPhone came along with the same effect - feeling that something was very strange, I tried to access Apple’s [account page] (https://appleid.apple.com/) and discovered that my account was indeed locked, forcing me to recover it with a subsequent password change.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/apple-id-down.jpg&quot; alt=&quot;Apple ID down?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Given that I am a bit of a “tinfoil-hat” guy, as friends and colleagues call me, when it comes to security, I tried to find out what could be wrong. I haven’t added any new devices to my account, which is of course protected by 2FA, backed up by two YubiKey 5C NFC keys. iOS 17.3’s “Stolen Device Protection” is also enabled, and at the time of writing I was not using any applications that require an application password - which got deleted after the account reset by the way! The password I used for my beloved old @mac.com address is generated and definitely not something that could be guessed or brute-forced - the tinfoil-hat guy, remember?&lt;/p&gt;
+
+&lt;p&gt;So I reset my password, knowing that I had some work to do at home later that evening. Two hours later, the same messages appeared again on my iPhone and Watch, so I went through the same process, feeling that something had to be wrong - and fearing that my account had some kind of security issue, especially since Apple’s &lt;a href=&quot;https://www.apple.com/support/systemstatus/&quot;&gt;official status page&lt;/a&gt; didn’t show anything unusual. Anyway, with all the security options Apple provides, the likelihood of a security flaw should be quite low - but the issue concerned me anyway (and should concern anyone with a similar experience). So, maybe it was a technical issue or something that forced Apple to lock my account?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/apple_id.jpg&quot; alt=&quot;Apple-devices&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, many people began reporting similar incidents around the world - many of them focusing on old @mac.com or @me.com addresses in the context of being the head of a family using the Family Sharing feature on iCloud.com. 9to5mac.com &lt;a href=&quot;https://9to5mac.com/2024/04/26/signed-out-of-apple-id-account-problem-password/&quot;&gt;reported the issue&lt;/a&gt; fairly early on and staff at &lt;a href=&quot;https://www.forbes.com/sites/daveywinder/2024/04/27/apple-id-password-reset-issue-hitting-iphone-ipad-and-macbook-users/&quot;&gt;Forbes&lt;/a&gt; had similar experiences. Also &lt;a href=&quot;https://www.theverge.com/2024/4/27/24142509/apple-id-logged-out-reset-stolen-device-protection&quot;&gt;The Verge got in line&lt;/a&gt; as well. The good news: I was not the only one. The bad: Nobody knew what was really going on because something was definitely wrong but Apple refused to comment on the issue, drawing the familiar veil of silence over the incident.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, the Net has been flooded with news about the issue, so the whole thing seems to have a greater impact:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theinternet.social/@tbridge/112340463598872085&quot;&gt;Thread #1 on Mastodon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eworld.social/@ismh/112340745553157794&quot;&gt;Thread #2 on Mastodon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mastodon.social/@ChrisLawley/112340853972099137&quot;&gt;Thread #3 on Mastodon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Michael Tsai’s &lt;a href=&quot;https://mjtsai.com/blog/2024/04/26/janky-apple-id-security/&quot;&gt;blog post&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@singletary/post/C6P9jfJt1VH&quot;&gt;Threads #1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@andelirich/post/C6P88QiNY-J&quot;&gt;Threads #2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@adhdjesse/post/C6P9hS_L9_7&quot;&gt;Threads #3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@9six7/post/C6P-cP1sNu7&quot;&gt;Threads #4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@jubnub/post/C6P_DNyMVaT&quot;&gt;Threads #5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@timmeh71/post/C6P_b4prnWJ&quot;&gt;Threads #6&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@ngorby/post/C6PvqnArUpZ&quot;&gt;Threads #7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.threads.net/@nichagan/post/C6Pzb8jLrvx&quot;&gt;More complaints on Threads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;whats-next-apple&quot;&gt;What’s next, Apple?&lt;/h2&gt;
+
+&lt;p&gt;Interestingly, among my friends and acquaintances, I was the only one affected - the only one with an “old” @mac.com-Apple ID. There was also no reaction in our family to similar effects (at least no one was texting or calling, so everything seems to be working). As The Net reports, Apple is downplaying the problem in terms of support calls and is not saying anything specific about “why” the whole thing happened in the first place. Personally, I could live with any explanation (precaution? attack? technical glitch?), as my security baseline is definitely more than just the simple standard, using all the options each vendor (in this case Apple) offers me but definitely there should be an official statement on this issue that has not just affected a few individual users. There is no need to diminish the relative importance of this case, and simply saying nothing is the wrong way to prove that “security” and “privacy” are still at the heart of Apple’s agenda.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/igor-son-Nod1nQ0i5a0-unsplash.jpg&quot; alt=&quot;Apple-devices&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the end, we see that security is not a status quo, but an ongoing process. Vendor agnostic. It’s a process often paved with good intentions and a lot of backtracking, but it’s never finished. For every measure there is a countermeasure, and yes, I love Apple, my fenced (and falling down) garden and the products that grow in it (and are paid for by the users) but specifically in this frustrating and annoying case I want an answer - and I am not alone!&lt;/p&gt;
+
+&lt;p&gt;So even as (or because being!) a loyal Apple fan and user for two decades, I have to ask the obvious question:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;What do you have to say about that, Apple?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Sat, 27 Apr 2024 00:00:00 +0200</pubDate>
+                <link>http://localhost:4000/apple-locks-users-out-of-their-apple-ids-without-explanation</link>
+                <guid isPermaLink="true">http://localhost:4000/apple-locks-users-out-of-their-apple-ids-without-explanation</guid>
+                
+                <category>Apple</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>How to delete stored credentials from a YubiKey</title>
+                <description>&lt;h3 id=&quot;using-yubikeys-for-securing-accounts-is-a-premium-step-to-a-nearly-ultimative-security-approach-besides-passkeys-or-simple-2fa-alas-over-time-those-hardware-tokens-often-fill-with-more-and-more-accounts---adding-them-is-no-big-deal-but-getting-rid-of-older-entries-isnt-that-intuitive-either-talk-about-in-the-field-of-artificial-intelligence&quot;&gt;Using YubiKeys for securing accounts is a premium step to a nearly ultimative security approach besides Passkeys or „simple“ 2FA. Alas, over time, those hardware tokens often fill with more and more accounts - adding them is no big deal, but getting rid of older entries isn’t that intuitive either. talk about in the field of Artificial Intelligence.&lt;/h3&gt;
+
+&lt;p&gt;Securing online accounts is one behavioral paradigm I have followed since hardware keys appeared and were affordable. With starting to use a password manager many years ago, also Two-Factor Authentication (2 FA) found its way into this security chain and in the time before the Passkeys (and still today) another layer of security is still mandatory. Paired with complex passwords, each layer helps to protect online accounts and even a password appearing in a new breach doesn’t scare that much if there is another, second (or third) factor helping you to prevent a personal and digital disaster.&lt;/p&gt;
+
+&lt;p&gt;As I am tending to check and change passwords as well as services mostly in the spring (call it spring cleaning!), I am also checking whether I still use a specific service or not. If not, I try to delete the account - the same procedure applies to accounts residing on my YubiKeys. I don’t add credentials to them every day so I do this phased and then continue to work with the keys for weeks or months - so I simply forget which data is already stored on those hardware tokens. As I am also a friend of cleaning up a historical mess, I try to get rid of old credentials when I don’t need them anymore - something that is quite difficult if you handle the YubiKeys just with the official YubiKey Manager. The app (still no Universal Binary on macOS in 2024) helps you to change many parameters but also prevents you from easily deleting unneeded credentials. This works anyway and, despite quite hidden, is done with the YubiKey Manager CLI - so let me show you how we can accomplish this task on our YubiKeys without resetting the device to factory defaults!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/oliver-hale-oTvU7Zmteic-unsplash.jpg&quot; alt=&quot;Cleaning in progress&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-the-yubikey-manager-cli&quot;&gt;Getting the YubiKey Manager CLI&lt;/h2&gt;
+
+&lt;p&gt;For Windows-users, the way of &lt;a href=&quot;https://www.yubico.com/support/download/yubikey-manager/?ref=pifferi.info&quot;&gt;getting the CLI&lt;/a&gt; is pretty straightforward as it comes bundled with the YubiKey Manager-application and resides in C:\Program Files\Yubico\YubiKey Manager. As long as your YubiKey uses at least firmware 5.2.x, you will instantly be able to deal with it using the CLI as documented &lt;a href=&quot;https://docs.yubico.com/software/yubikey/tools/ykman/Using_the_ykman_CLI.html?ref=thebinaryjournal.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Mac-version 1.25 comes as a .PKG-file and obviously misses the CLI so we need to make use of extended package managers like Homebrew to fetch the desired file named „ykman“.&lt;/p&gt;
+
+&lt;p&gt;Installing &lt;a href=&quot;https://brew.sh&quot;&gt;Homebrew&lt;/a&gt; is pretty straightforward but yet another topic so assuming you have already done so by either typing&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or using the new and official .PKG-installation for Macs hosted on &lt;a href=&quot;https://github.com/Homebrew/brew/releases/latest&quot;&gt;GitHub&lt;/a&gt;, a simple&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install ykman
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;should do the trick and, after some packages were fetched, we’re finally ready to go on macOS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/yubikey-version.jpg&quot; alt=&quot;Checking the proper YubiKey-version&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;doing-the-magic-with-ykman&quot;&gt;Doing the magic with ykman&lt;/h2&gt;
+
+&lt;p&gt;After having met the one and only prerequisite, ykman is ready to so firing up the command without any specific parameter should show us the following screen with all options available:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/yubikey_ykman_mac.jpg&quot; alt=&quot;Looking what we can do with ykman&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To see which credentials are stored, just enter a&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;followed by your personal PIN (which should be set, otherwise using a hardware security key is quite pointless).&lt;/p&gt;
+
+&lt;p&gt;A list of services will appear, guided by a credential ID:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/ykman_yubikey_services.jpg&quot; alt=&quot;Looking what we can do with ykman&quot; /&gt;.&lt;/p&gt;
+
+&lt;p&gt;To delete a specific service, simply use the following command followed by the specific credential ID:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials delete [credential id]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For example, for removing my apple.com-account from my YubiKey (always two there are!), the appropriate command would be&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials delete d60f8b33
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and it would be just the first entry with credential ID d60f8b33 that would be deleted from the YubiKey’s storage!&lt;/p&gt;
+
+&lt;p&gt;To check whether the credentials have been removed or not (believe me, they should!), another&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;will show the remaining credentials.&lt;/p&gt;
+
+&lt;h2 id=&quot;verdict&quot;&gt;Verdict&lt;/h2&gt;
+
+&lt;p&gt;With simple materials on board, we have managed to remove single elements and stored credentials from an YubiKey without the need to fully wipe the device. Despite the CLI-tools are quite hidden on Mac or - to be more specific - must be installed separately from the YubiKey Manager, we finally used Homebrew for doing this task for us, enabling us to clean unwanted credentials from out precious YubiKey.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/flyd-FGH69mi53Mw-unsplash.jpg&quot; alt=&quot;Looking what we can do with ykman&quot; /&gt;.&lt;/p&gt;
+
+&lt;p&gt;This way may be quite helpful if you aren’t aware which credentials are stored on the YubiKey and just want to see or delete them on a per-item basis instead of wiping the whole device, forcing you to re-integrate the whole hardware token with each service connected!&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Sun, 17 Mar 2024 00:00:00 +0100</pubDate>
+                <link>http://localhost:4000/how-to-delete-stored-credentials-from-a-yubikey</link>
+                <guid isPermaLink="true">http://localhost:4000/how-to-delete-stored-credentials-from-a-yubikey</guid>
+                
+                <category>Security</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Spring Cleaning - Tidying up your Mastodon-instance</title>
+                <description>&lt;h3 id=&quot;after-six-months-of-running-a-small-two-user-mastodon-instance-i-was-astonished-to-see-the-media-growth-over-the-time-so-it-was-way-overdue-to-reflect-how-to-do-some-spring-cleaning-in-this-cozy-self-hosted-space&quot;&gt;After six months of running a small, two user Mastodon-instance, I was astonished to see the media growth over the time so it was way overdue to reflect how to do some spring cleaning in this cozy, self-hosted space.&lt;/h3&gt;
+
+&lt;p&gt;Despite carefully selecting and tuning Mastodon’s internal retention policies to (obviously) suit my needs, I discovered this small instance filling up nearly 1,8 TB of storage in my S3-bucket: Fortunately, I am actively tracking my monthly bills  of my Wasabi-account but considering that, not long ago, a whole TB was enough for some of my Fediverse-based services and some backups in separate buckets, I was forced to get to the bottom of this case and found the Mastodon-based cached media assets to be the root of this evil.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mastodon_retention_settings.jpg&quot; alt=&quot;Mastodon’s retention policies&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mastodons-materials-on-board&quot;&gt;Mastodon’s materials on board&lt;/h2&gt;
+
+&lt;p&gt;Fortunately, Mastodon’s backend is indeed some kind of beast so the &lt;a href=&quot;https://docs.joinmastodon.org/admin/tootctl/&quot;&gt;built-in CLI&lt;/a&gt; gives you the availability to clean attachments and previews from remote accounts, purging the precious disk cache.  Despite Mastodon having tons of options, you may rarely use them on a daily basis so I did finally spend some time to get used to the single commands. Afterwards, combining and scheduling them on a cron-basis may help you to save valuable disk space, no matter where your data is stored.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mastodon_s3_utilization_before.jpg&quot; alt=&quot;Mastodon’s space utilization in its S3-bucket&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-script&quot;&gt;The script&lt;/h2&gt;
+
+&lt;p&gt;Six single commands are the road to our success of re-gaining storage space for our Mastodon-instance. Being the „mastodon“-user on my system and assuming you use the same user and the same paths according to Mastodon’s official guide for deploying your own server, I decided to create an empty file via&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vi /home/mastodon/mastodon-cleanup.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and filled it with the combination of six commands and the specific explanations aiming at a retention of fourteen days which should, in my case, serve well - feel free to alter these parameters according to your personal needs:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/bash
+
+# Prune remote accounts that never interacted with any local user
+RAILS_ENV=production /home/mastodon/live/bin/tootctl accounts prune;
+
+# Remove remote statuses that local users never interacted with older than 14 days
+RAILS_ENV=production /home/mastodon/live/bin/tootctl statuses remove --days 14;
+
+# Remove media attachments older than 14 days
+RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove --days 14;
+
+# Remove all headers (including people you follow)
+RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove --remove-headers --include-follows --days 0;
+
+# Remove link previews older than 14 days
+RAILS_ENV=production /home/mastodon/live/bin/tootctl preview_cards remove --days 14;
+
+# Remove files not linked to any post
+RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now make the script executable.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x /home/mastodon/mastodon-cleanup.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’ve never run these commands before (just as I did) I’d suggest you start with initially running them one by one as they might take several hours or days to run for the first time. The size of the cached media and database will depend on how many people you follow (approximately 100 in my case), how many users are on your specific instance or how many relays you have added to your instance - just to name some aspects. With Mastodon being a federated Social Network, there are many pros but also cons as each server is talking to other ones, gathering lots of data - which lead us to the dilemma of a quite impressive disk space consumption even with a very small instance.&lt;/p&gt;
+
+&lt;h2 id=&quot;scheduling-time&quot;&gt;Scheduling time&lt;/h2&gt;
+
+&lt;p&gt;After we have initially deployed each of the six single commands and freed up the first batch of space, it is sure that we don’t want to do this manually each time. Fortunately, Linux Cron-daemon is our Swiss Army knife for scheduling and with just a single line of code, our script will run at specific times.&lt;/p&gt;
+
+&lt;p&gt;So, as logged in „mastodon“-user, just deploy a&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;to enter this user’s cron-settings. Now just add another line at the end of the file matching your needs when this script should run. After the first run, it won’t take that much time anymore so I decided that I am fine with running it every six hours.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 */6 * * * /bin/bash /home/mastodon/mastodon-cleanup.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you aren’t familiar with the syntax of Cron, I recommend to use the &lt;a href=&quot;https://crontab-generator.org&quot;&gt;Crontab Generator&lt;/a&gt; which is always a good way to to check whether your job is correct or not - or even create the whole command you may insert into the crontab instantly for you!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mastodon_cleanup_crontab_settings.jpg&quot; alt=&quot;The crontab-settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Save the file and from this moment on, cron will take care of executing the script every six hours!&lt;/p&gt;
+
+&lt;h2 id=&quot;verdict&quot;&gt;Verdict&lt;/h2&gt;
+
+&lt;p&gt;With this small tutorial, we managed to implement a great mechanism of automatically getting rid of cached and material and media on our own Mastodon-instance. This is by far the best-practice for every instance and yes, every file may be download and cached again once we interact with the specific status or message connected to it - therefore this solution is more an approach for smaller instances instead of larger ones but, as always, tastes (and demands) are different.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/lia-trevarthen-gWvdUpNQr6g-unsplash.jpg&quot; alt=&quot;Dealing with storage boxes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;According to your type of storage you may see the result quite fast or - in my case - on the next day as Wasabi’s statistics need their time to refresh the bucket size. With local storage, the result should be imminent, for me it took its time but the used space decreased drastically and ended up with Mastodon taking less than only 20 GB afterwards! Especially in terms of Wasabi and even despite the fact that the space is freed up immediately, you even pay for deleted storage for 90 days in advance here - in my case a good compromise to prevent the egress-charges from other S3-providers but this is yet another topic!&lt;/p&gt;
+
+&lt;p&gt;Anyway, putting all provider-specific considerations aside, this script should help you to control the amount of cached media on your Mastodon-server. Feel free to adopt the script to match your specific needs and do a spring cleaning on your Mastodon-instance - I hope that you somehow consider this post as some kind of useful!&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Sun, 25 Feb 2024 00:00:00 +0100</pubDate>
+                <link>http://localhost:4000/Spring-Cleaning-Tidying-up-your-Mastodon-instance</link>
+                <guid isPermaLink="true">http://localhost:4000/Spring-Cleaning-Tidying-up-your-Mastodon-instance</guid>
+                
+                <category>Linux</category>
+                
+                
+                <category>IT</category>
+                
+            </item>
+        
+            <item>
+                <title>My default apps starting 2024</title>
+                <description>&lt;h3 id=&quot;there-have-been-many-lovely-events-in-the-internet-over-the-years-and-one-to-cherish-especially-is-the-one-where-users-simply-blog-about-their-favorite-standard-apps-they-are-using&quot;&gt;There have been many lovely events in the Internet over the years and one to cherish especially is the one where users simply blog about their favorite standard apps they are using.&lt;/h3&gt;
+
+&lt;p&gt;It’s a simply idea and despite reminding me on some kind of classic chain letter, I stumbled upon this campaign by swiping through my Mastodon-feed. Niklas, a lucky German guy who managed to live in Norway (yes, I am definitely jealousy of him here!) &lt;a href=&quot;https://niklas.fyi/2024/01/11/default-apps/&quot;&gt;shared his list&lt;/a&gt;. After looking what all this was really about, I discovered &lt;a href=&quot;https://rknight.me&quot;&gt;Robb Knight’s&lt;/a&gt; site and his „&lt;a href=&quot;https://defaults.rknight.me&quot;&gt;App Defaults&lt;/a&gt;“-project.&lt;/p&gt;
+
+&lt;p&gt;Here, he initiated and collected RSS-feeds people in the Net telling exactly which standard-apps / services they use and although this is a quite basic idea, it is one of the vivid and positive things in the WWW these days.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;📨 Mail Service: &lt;a href=&quot;http://icloud.com/mail&quot;&gt;iCloud Mail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;📮 Mail Client: &lt;a href=&quot;https://apps.apple.com/app/mail/id1108187098&quot;&gt;Apple Mail&lt;/a&gt; on macOS &amp;amp; iOS, &lt;a href=&quot;http://icloud.com/mail&quot;&gt;iCloud Mail&lt;/a&gt; in the Web&lt;/li&gt;
+  &lt;li&gt;📝 Notes: &lt;a href=&quot;https://obsidian.md&quot;&gt;Obsidian&lt;/a&gt; and &lt;a href=&quot;https://www.icloud.com/notes&quot;&gt;Apple Notes&lt;/a&gt; (dying)&lt;/li&gt;
+  &lt;li&gt;✅ To-Do: &lt;a href=&quot;https://apps.apple.com/us/app/reminders/id1108187841&quot;&gt;Apple Reminders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🌅 Photo library: &lt;a href=&quot;https://www.icloud.com/photos&quot;&gt;iCloud Photos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;📆 Calendar: &lt;a href=&quot;https://www.icloud.com/calendar&quot;&gt;iCloud Calendar&lt;/a&gt; CalDAV&lt;/li&gt;
+  &lt;li&gt;📁 Cloud Storage: &lt;a href=&quot;https://www.synology.com/dsm/feature/drive&quot;&gt;Synology Drive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;📖 RSS Service: Self-hosted &lt;a href=&quot;https://freshrss.org/&quot;&gt;FreshRSS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🙍🏻‍♂️ Contacts: &lt;a href=&quot;https://www.icloud.com/contacts&quot;&gt;iCloud Contacts&lt;/a&gt; CardDAV&lt;/li&gt;
+  &lt;li&gt;🌐 Browser: &lt;a href=&quot;https://www.apple.com/safari/&quot;&gt;Safari&lt;/a&gt; and &lt;a href=&quot;https://github.com/ungoogled-software/ungoogled-chromium&quot;&gt;ungoogled-chromium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;💬 Chat: &lt;a href=&quot;https://signal.org/&quot;&gt;Signal&lt;/a&gt;, &lt;a href=&quot;https://apps.apple.com/zm/app/messages/id1146560473&quot;&gt;Messages&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://apps.apple.com/us/app/threema-the-secure-messenger/id578665578?ign-mpt=uo%3D4&quot;&gt;Threema&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🛒 Shopping Lists: &lt;a href=&quot;https://apps.apple.com/us/app/reminders/id1108187841&quot;&gt;Apple Reminders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🔎 Search: &lt;a href=&quot;https://duckduckgo.com&quot;&gt;DuckDuckGo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;📚 Reading: Printed (!) books&lt;/li&gt;
+  &lt;li&gt;📰 News: &lt;a href=&quot;https://apps.apple.com/app/reeder-5/id1529445840&quot;&gt;Reeder 5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🎵 Music: &lt;a href=&quot;https://www.apple.com/apple-music/&quot;&gt;Apple Music&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🎤 Podcasts: &lt;a href=&quot;https://www.apple.com/apple-podcasts/&quot;&gt;Apple Podcasts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🌤️ Weather: &lt;a href=&quot;https://apps.apple.com/us/app/weather/id1069513131&quot;&gt;Apple Weather&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🔐 Password Management: Self-hosted &lt;a href=&quot;https://bitwarden.com&quot;&gt;Bitwarden&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🧮 Code Editor: &lt;a href=&quot;https://apps.apple.com/app/coteditor/id1024640650?mt=12&quot;&gt;CotEditor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/dan-cristian-padure-noOXRT9gfQ8-unsplash.jpg&quot; alt=&quot;Tools&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As 2024 is still being young but already comes along with uprising political turmoil here in Germany paired with a quite dissatisfied population, there are definitely some more serious things to handle this year. Anyway, it’s quite funny to create this list and look how it will develop over time as needs and use cases may change like they have changed over the years - so apart from the real serious events on this planet, this one here is a welcomed relief…&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Mon, 08 Jan 2024 00:00:00 +0100</pubDate>
+                <link>http://localhost:4000/My-default-apps-starting-2024</link>
+                <guid isPermaLink="true">http://localhost:4000/My-default-apps-starting-2024</guid>
+                
+                <category>Software</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Season Greetings and goodbye forever, 2023!</title>
+                <description>&lt;h3 id=&quot;it-was-a-special-and-somehow-strange-year---paired-with-many-experiences-and-the-proof-that-there-are-often-unexpected-insights-into-human-nature&quot;&gt;It was a special and somehow strange year - paired with many experiences and the proof that there are often unexpected insights into human nature.&lt;/h3&gt;
+
+&lt;p&gt;Looking back even into the COVID-years which defined our way the last three years (while the plague is still there), 2023 wasn’t the best year in many ways. It was a year of change, a year of insights and a year of breaking bonds with people seemingly flagged as „friendly co-workers“ just because of a job change: All those experiences finally built their own, full circle and, in the end, other positive outcomes helped to leave the past behind while aiming towards a better personal future.&lt;/p&gt;
+
+&lt;p&gt;From a professional basis, many things changed in its foundation starting this March, &lt;a href=&quot;../The-best-way-to-predict-your-future-is-to-create-it/&quot;&gt;finally enabling me&lt;/a&gt; to leave a dead-end caused by many wrong strategical decisions over the last consecutive three years. Over the year, there was a s&lt;a href=&quot;../Stop-worrying-about-people-that-arent-worried-about-you/&quot;&gt;teep learning curve&lt;/a&gt; experiencing that, during these days, literally leaving the Hogwarts Express heading to anywhere except Hogwarts may leave you disposed into the nowhere. Seen from a business view, you were useful once you opted out continuing to howl with the wolves despite the real wolves in sheep’s closing tried to make anything worse powered by missing awareness, ignorance and ongoing megalomania.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/hadija-9cgMKmZyhH0-unsplash.jpg&quot; alt=&quot;Past or future?&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-personal-view&quot;&gt;The personal view&lt;/h2&gt;
+
+&lt;p&gt;From a personal point of view, it was also challenging year. Seeing how fast your kids - my four girls - grow up is a blazing experience and, deeply felt, this speed is accelerating every single month. We faced an absolutely sad and unexpected loss as my father-in-law suddenly passed away in March, ripping our Italian heart out of our family’s chest. With the pain growing, the family closed ranks even more and while I consider many opportunities to suit better, my brother-in-law lived with us for nearly two weeks, helping is sister and everyone of us to redress the pain. After this, a wonderful week in Denmark was welcomed to create a distance to the awful events and drove me to &lt;a href=&quot;../The-best-way-to-predict-your-future-is-to-create-it/&quot;&gt;make a final decision&lt;/a&gt; on my job perspective, summing everything up with the result being perfectly clear.&lt;/p&gt;
+
+&lt;p&gt;Over the year, the world seemed to continue to go down the swanny once again: &lt;a href=&quot;../The-only-thing-we-have-to-fear-on-the-planet-is-man/&quot;&gt;Ongoing war in the Ukraine&lt;/a&gt;, a (German) society striving to the far-right regarding politics (while everyone seeing this happen), the state of (worldwide) politics in general and environmental events like the climate change being a threat to all of us not worth discussing: The challenges for mankind are ahead and if rising temperatures, floods, thunderstorms and other events aren’t proof enough that we’re already too late to participate in the game of change, then this planet may indeed be doomed. While politicians still gather their lickspittles around them, deny these threats and continue to curry favour with the fuel-lobby instead of really patronising solar and wind energy-options, many people have realized that we must turn towards new energies.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/tania-malrechauffe-Tq7lbAeF9BQ-unsplash.jpg&quot; alt=&quot;Change politics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The clash of culture(s) is preprogrammed and will be an immense task not only for the new year to come as the countdown to extinction (as Megadeth already knew and sung about in 1992) is still ticking… faster. Basically, many nations and governments (not only the German one) need a complete overhaul but where to start? It needs an invest of everyone and so my thoughts since the COVID-19 pandemic were fortified over the years: Every man for himself - a dangerous tendency!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-personal-view-1&quot;&gt;The personal view&lt;/h2&gt;
+
+&lt;p&gt;Personally, I am quite sure that some debts will be payed off next year and surely many people will encounter the lovely wisdom of „as you sow, so you shall reap“. Karma is a bitch and sometimes it takes longer for people to earn what they were striving for - in the end, everyone finally gets what he deserved. &lt;a href=&quot;../Stop-worrying-about-people-that-arent-worried-about-you/&quot;&gt;I was personally disappointed by a lot of people in 2023&lt;/a&gt; and my (formerly good) knowledge of human nature failed in many ways. But there is hope with an old (and trustworthy) but also new workforce around me, with new people acting in concert and new challenges ahead. Let’s work on and with these, let’s be successful and let’s create a working culture within a promising company really empowering the employees to participate instead of building a castle in the clouds guarded by an unicorn while everyone actually knows that everything is pouring down the sink anyway.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/cristian-escobar-abkEAOjnY0s-unsplash.jpg&quot; alt=&quot;New year&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There will be familial challenges ahead, challenges with health and my growing kids but I hope that we will somehow manage those in the best-possible ways so staying healthy as long as possible is surely one of the better wishes for an upcoming new year. While this one comes to an end, I try to put many disappointing moments of 2023 into a box, seal and get rid of them. The sad moments prevailed but the good moments are a foundation to build trust on, no matter if it was a 60 km-hike within three days, opening an exciting new chapter of your professional life with ten people in common, playing „Hogwarts Legacy“ with your eldest or conquering the (still-not-real) North of Norway with three wonderful and crazy guys: Hope for the better lives on, so be welcomed, 2024 - and hopefully this year will be a better one than the last ones as the good often comes unexpected!&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Sun, 24 Dec 2023 00:00:00 +0100</pubDate>
+                <link>http://localhost:4000/season-greetings-and-goodbye-forever-2023</link>
+                <guid isPermaLink="true">http://localhost:4000/season-greetings-and-goodbye-forever-2023</guid>
+                
+                <category>Thoughts</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Is Bluesky worth a visit?</title>
+                <description>&lt;h3 id=&quot;while-many-people-and-even-corporate-brands-are-fleeing-from-x---formerly-known-as-twitter---the-question-is-which-service-is-able-to-provide-shelter-the-fediverse-with-products-like-mastodon-or-misskeycalckeyfirefish-is-definitely-an-option-while-jack-dorsey-former-twitter-ceo-and-co-founder-tries-to-gather-up-the-masses-with-his-latest-project-bluesky&quot;&gt;While many people and even corporate brands are fleeing from X - formerly known as “Twitter” - the question is which service is able to provide shelter. The Fediverse with products like Mastodon or Misskey/Calckey/Firefish is definitely an option while Jack Dorsey, former Twitter CEO and Co-founder, tries to gather up the masses with his latest project, Bluesky.&lt;/h3&gt;
+
+&lt;p&gt;The Social Network-landscape is shattered these days. While the downfall of X was somehow a predictable process, it is still astonishing how fast a service that once was a synonym for short messaging is ruined while (seemingly) hazarding all consequences. Anyway, each failure is a chance for optimization and so other networks with the focus on decentralization grew over the years - one of them, virtually flagshipping The Fediverse, was Mastodon. Besides, and somehow lurking in the shadows, the virtual successor of Twitter has been in the works for four years using an investment of nearly 13 millions USD: Bluesky, lead by Jay Graber and former Twitter-CEO and co-founder Jack Dorsey - a decentralized new social network based upon the &lt;a href=&quot;https://atproto.com/guides/overview&quot;&gt;AT-protocol&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/boliviainteligente-elSx3uwGhBw-unsplash.jpg&quot; alt=&quot;X dot com&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;from-bluebird-to-bluesky&quot;&gt;From bluebird to Bluesky&lt;/h2&gt;
+
+&lt;p&gt;First of all, Bluebird’s &lt;a href=&quot;https://bsky.app&quot;&gt;website&lt;/a&gt; looks quite simple - and yes, it’s work in progress. Getting onboarded isn’t as easy because the access to the new Social Network is - in my eyes - crippled intentionally. Not everyone can sign up, people need invite codes - everyone of you who thought this scenario reminding on the old days of early OnePlus-smartphones has been put to a grave is wrong. You need an invite code to play in the sandbox of Bluesky - and getting those may be a hassle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/Bluesky_start.jpg&quot; alt=&quot;Simply blue&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As always, celebrities and people or organizations of public interest join the platform to attract new followers and subscribers. In moments where many of those flee from X.com, Bluesky is a welcomed new home and especially here in Germany, this escape-scenario drastically increased throughout the last months with many famous accounts migrating to Bluesky: Good bait catches fine fish and with a solid base of well-known accounts, people automatically get interested in following those.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/Bluesky_register.jpg&quot; alt=&quot;Registering&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Should you be able to get an invite code (users who are with the platform a little bit longer get those for example), there is no obstacle towards subscribing to Bluesky anymore as the web interface is definitely not a complicated one: Create your account by choosing your provider, enter your invite code (or join the waitlist), pick your handle, enter your E-mail address and password and you’re ready to go.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/Bluesky_invite.jpg&quot; alt=&quot;Where&apos;s the invite?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It could be that easy if the trending thing about entering Bluesky wasn’t the artificially-truncated invite code thing. I personally don’t know if this is because of making the service more “exclusive” or keeping spammers and bots outside - finally, this scenario does its work.&lt;/p&gt;
+
+&lt;p&gt;There are different ways to get an invite - just be patient and wait until your spot in the waitlist is next, get a code from another Bluesky-user or look for initiatives like, for example, the &lt;a href=&quot;https://mailbox.org/en/post/mailbox-org-opens-bluesky-invitation-code-exchange-platform&quot;&gt;invitation exchange platform&lt;/a&gt; of German provider mailbox.org - paying customers can request an invite or share their codes with others: In my case, I didn’t wait a half day until (unexpectedly) the mail with an invite reached me (pure luck or less demand - who knows?)-&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/Bluesky_waitlist.jpg&quot; alt=&quot;Joining the waitlist&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;first-steps&quot;&gt;First steps&lt;/h2&gt;
+
+&lt;p&gt;Once you made it to scavenge an invite code and used it for good, you probably have created your account with the @bsky.social-appendix and the outlook will be quite similar to Twitter in earlier days. Indeed Bluesky focuses on the essentials while missing some of those well-known ones, but you definitely will feel familiar straight from the first visit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/Bluesky_overview.jpg&quot; alt=&quot;Overview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the left pane, you see self-declaring links for your home site, the general feed, current notifications, moderation statistics, your profile and general settings. The middle shows the feed with accounts you’ve subscribed to, the right side displays a search box, an option to discover other accounts and more feeds. The latter are indeed custom algorithms that users can build with a little coding expertise as documented &lt;a href=&quot;https://github.com/bluesky-social/feed-generator&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/jelleke-vanooteghem-gnxb59lGU1M-unsplash.jpg&quot; alt=&quot;Bluesky&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;verification&quot;&gt;Verification&lt;/h2&gt;
+
+&lt;p&gt;There is no blue, yellow, gold, whatsoever checkmark to verify your identity (yet). Instead, you can change your handle, for example @oliverpifferi.bsky.social, to - in my case - @pifferi.info by adding a certain DNS-entry to a domain you own. It’s still not the way of a knightly accolade, but what can proof your online identity better than access to the DNS-settings of a domain you own by yourself?&lt;/p&gt;
+
+&lt;p&gt;First of all, enter the settings and use the “change handle”-option just like you would do when changing it into another @bsky.social-tag.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/Bluesky_settings.jpg&quot; alt=&quot;The way to change your handle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on the “I have my own domain”-option here:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/Bluesky_change_handle.jpg&quot; alt=&quot;Do you have your own domain?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now another windows will appear with the verification-settings you need to enter into the DNS-settings of your domain. Enter the domain in the upper field and see which TXT-entry will be generated afterwards. This entry with the _atproto-prefix and the specific value must then be added to your site’s DNS-configuation as a new entry.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/bluesky_change_handle_settings.jpg&quot; alt=&quot;The way to change your handle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One you have done this in a separate window, click on “Verify DNS record” and, depending on your provider, your account will be verified, permanently changing your handle to, in this case, @alice.com (or, @pifferi.info in mine). In case you don’t have access to the DNS-console, you may also place a TXT-file in the webroot of your specific website and verify it via this way. Further information on verification on Bluesky can be found &lt;a href=&quot;https://blueskyweb.zendesk.com/hc/en-us/articles/19001802873101-How-to-Set-your-Domain-as-your-Handle&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;finally&quot;&gt;Finally…&lt;/h2&gt;
+
+&lt;p&gt;Bluesky looks like X/Twitter once used to look. It still misses features that many former users got used to and while the whole platform is definitely in the status of “work in progress”, it is definitely fill up with many people flooding from X or users who run their Bluesky-account parallel to their Mastodon-one - which is quite interesting. If you don’t mind starting with a new social network created by the same crypto bro that once was in charge of ancient Twitter before selling the whole platform (and if you’re okay with this possibly happening again), Bluesky may stand for the simplicity that once made the former bluebird that popular. The classical PR-B/S of “federated” and “decentralized” is something that needs to be proven in the future - without the approach of an open, really decentralized and federated standard, just another siloed platform has just been born.&lt;/p&gt;
+
+&lt;p&gt;Until then, and with direct messages possibly being integrated sometimes in the future, Bluesky may be an alternative based on “yet another protocol”. It looks slim, is trimmed down to basic functions and you will probably find lots of people that fled from X - but, as always, it will be interesting to watch how this platform will grow and develop once the artificially-shortened signup process has been erased and in how far it can compete with the Fediverse in terms of “building a healthier community”. Most of the people fleeing from “the other side” need to find a new comfortable home, just a few of them will care about where the data is being stored. Considering that all your posts on Bluesky are available via API-endpoints without any kind of authentication at the time of writing (see my post in raw &lt;a href=&quot;https://bsky.social/xrpc/com.atproto.repo.listRecords?repo=pifferi.info&amp;amp;collection=app.bsky.feed.post&quot;&gt;here&lt;/a&gt; for example), “Privacy” could also be an interesting topic to deal with when opting in for any new platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/ehimetalor-akhere-unuabona-TvJk52iLxQA-unsplash.jpg&quot; alt=&quot;Stay connected&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;stream-of-time&quot;&gt;Stream of time&lt;/h2&gt;
+
+&lt;p&gt;At last, time will (as always) tell but as someone who changed to Mastodon for quite a while and running an own instance, even Bluesky has its charm and reminds on times where Social Networking was less toxic than it is today. In the end, usability and the people, groups and institutions on the specific platform will shape the foundation for more or less success - this is a challenge all solutions of the “post-Twitter”-era have to deal with inevitably.&lt;/p&gt;
+
+&lt;p&gt;Considering the results of all these thoughts, Bluesky IS worth a visit at the time of writing, despite the silly invite-system - but don’t expect a fully-matured platform like the former Twitter or Mastodon &amp;amp; Co!  It still is work in progress and although the current approach serves our nostalgic memories quite well, missing hashtags-support, no possible video-uploads or even basic things like 2FA in terms of security show that there is still a long way to go. Speaking of federation and decentralization I am also quite curious if the self-hosting on own Bluesky-servers based upon the AT-protocol will be possible like we know this from the Fediverse-solutions. Time will tell but any option is better than the remains of the social network that once made use to know what’s going on in the world with 140 characters!&lt;/p&gt;
+
+&lt;p class=&quot;note&quot;&gt;Did you enjoy this post? Share it with a friend!&lt;/p&gt;
+
+&lt;p class=&quot;tip&quot;&gt;Follow me on &lt;a href=&quot;https://metalized.net/@oliver&quot;&gt;Mastodon&lt;/a&gt;. All my other links are available on &lt;a href=&quot;https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5&quot;&gt;Keyoxide&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;important&quot;&gt;If you’d like to say hi, my contact information is &lt;a href=&quot;https://me.pifferi.io&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
+</description>
+                <pubDate>Sat, 04 Nov 2023 00:00:00 +0100</pubDate>
+                <link>http://localhost:4000/is-bluesky-worth-a-visit</link>
+                <guid isPermaLink="true">http://localhost:4000/is-bluesky-worth-a-visit</guid>
+                
+                <category>Internet</category>
+                
+                
+                <category>Internet</category>
+                
+            </item>
+        
+    </channel>
+</rss>

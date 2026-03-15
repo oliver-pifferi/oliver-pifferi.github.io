@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Fediverse -  A vivid and modern approach to today’s Social Network-landscape</title>
+  <meta name='description' content='Beyond the Algorithm - Stories of a Digital Soul'>
+
+  <link rel="canonical" href="http://localhost:4000/The-Fediverse-a-vivid-and-modern-approach-to-todays-social-network-landscape">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Fediverse -  A vivid and modern approach to today’s Social Network-landscape – The Binary Journal">
+  <meta name="twitter:description" content="When I once discovered Mastodon, the Fediverse was already a nice approach in helping to rebuild the polluted Social Network-landscape.
+">
+  <meta name="twitter:image:src" content="http://localhost:4000/images/fediverse_logo.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="The Fediverse -  A vivid and modern approach to today’s Social Network-landscape – The Binary Journal">
+  <meta property="og:description" content="When I once discovered Mastodon, the Fediverse was already a nice approach in helping to rebuild the polluted Social Network-landscape.
+">
+  <meta property="og:image" content="http://localhost:4000/images/fediverse_logo.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+  <script>
+    const defaultTheme = "dark";
+    const isToggleEnabled = true;
+    const userTheme = localStorage.getItem("theme");
+
+    function setTheme(mode) {
+      if (mode === "dark") {
+        document.documentElement.setAttribute("dark", "");
+        document.documentElement.classList.add("dark-mode");
+      } else if (mode === "light") {
+        document.documentElement.removeAttribute("dark");
+        document.documentElement.classList.remove("dark-mode");
+      }
+    }
+
+    if (isToggleEnabled) {
+      if (userTheme) {
+        setTheme(userTheme);
+      } else {
+        setTheme(defaultTheme);
+      }
+    } else {
+      setTheme(defaultTheme);
+    }
+
+    if (localStorage.getItem("classView") === "list") {
+      document.documentElement.setAttribute("list", "");
+      document.documentElement.classList.add('view-list');
+    }
+  </script>
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  
+
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+    <!-- begin header -->
+<header class="header">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            The Binary Journal
+          
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <div class="main-nav__box">
+            <ul class="nav__list list-reset">
+              
+              
+              <li class="nav__item">
+                <a href="/" class="nav__link">Home</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/about/" class="nav__link">About</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/archive/" class="nav__link">Archive</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/contact/" class="nav__link">Contact</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+
+        <div class="nav-button">
+          
+          <div class="color-scheme-button">
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72"/>
+                </svg>
+              </div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                    <path stroke-linecap="round" d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15"/>
+                    <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z"/>
+                    <path stroke-linecap="round" d="M24 45v-3.15"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="search-button">
+            <svg class="search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+            <span class="search-button__text">Search posts...</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- begin search -->
+<div class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search__box">
+          <div class="search__group">
+            <i class="search__close fa-solid fa-xmark"></i>
+            <label for="js-search-input" class="screen-reader-text">Search for Blog</label>
+            <input type="text" id="js-search-input" class="search__text" autocomplete="off"
+              placeholder="Type to search...">
+          </div>
+          <div class="search-results-list view-list" id="js-results-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search__overlay"></div>
+</div>
+<!-- end search -->
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      <!-- begin post -->
+<div class="container">
+
+  <div class="row">
+    <div class="col col-8 col-d-12">
+
+      <div class="post-head">
+
+        
+        
+        <div class="post-image">
+          <img class="lazy" data-src="/images/fediverse_logo.jpg" alt="The Fediverse -  A vivid and modern approach to today’s Social Network-landscape">
+        </div>
+        
+        
+
+        <div class="post-info">
+          
+          <div class="post-tags">
+            
+            <a href="/tags/?tag=internet" class="post-tag"
+              style="background: var(--dark-gray);">Internet</a>
+            
+          </div>
+          
+
+          <h1 class="post-title">The Fediverse -  A vivid and modern approach to today’s Social Network-landscape</h1>
+
+          <div class="post-meta">
+            <a href="/about/" class="post-meta__image">
+              <img class="lazy" data-src="/images/01-1.jpg"
+                alt="Oliver Pifferi">
+            </a>
+
+            <div class="post-meta__content">
+              <a class="post-meta__author" href="/about/">Oliver Pifferi</a>
+              <div class="post-meta__bottom">
+                <time class="post-date" datetime="2023-09-01T00:00:00+02:00">01 Sep, 2023</time> –
+                <span class="post-minutes">
+                  
+                   7 min read  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <article class="post">
+        <div class="post__content">
+          
+
+          <h3 id="when-i-once-discovered-mastodon-the-fediverse-was-already-a-nice-approach-in-helping-to-rebuild-the-polluted-social-network-landscape">When I once discovered Mastodon, the Fediverse was already a nice approach in helping to rebuild the polluted Social Network-landscape.</h3>
+
+<p>But, based upon the <a href="https://www.w3.org/TR/activitypub/">ActivityPub</a>-protocol, Mastodon isn’t the only player giving hope for federated and decentralized networking. After going with my own Mastodon-instance, I also discovered two additional great services that are valuable additions to the Fediverse - and I don’t want to withhold those from you in case you are interested in learning more about those!</p>
+
+<p><img src="../images/mastodon_welcome.jpg" alt="New folks are being welcomed- Graphic Credits: Mastodon" /></p>
+
+<h2 id="pixelfed">Pixelfed</h2>
+
+<p>After finally dumping Instagram in December 2022, I went all in with <a href="https://pixelfed.org/">Pixelfed</a>: After discovering this service in early 2021, I  already tried to free myself from the bounds of Instagram but - let’s be honest - Pixelfed wasn’t ready to follow in Instagram’s step then. The basis was okay and considering the project to be work in progress - and albeit the „little“ version 0.11.6 at the time of writing - the software created by <a href="https://pixelfed.social/dansup">Daniel Supernault</a> has heavily progressed over the time. I returned in late 2022, played around and finally created an instance that was playground. Later, it got dumped and on April 21st, my own instance has opened its gates, welcoming people from Scandinavia and people loving the Scandinavian way of life and the nature there. While the server itself is hosted at home, all media assets are stored in a S3-Bucket in Helsinki but it would also be possible not to store or process any data outside from Germany. Finding the proper way of S3-integration took a while but, over the months, has turned into a solid base for storing media files.</p>
+
+<p><img src="../images/pixelfed_org_website.jpg" alt="Pixelfed.org Welcome Site" /></p>
+
+<p>Thus spoken, Pixelfed is still a project under heavy development, but frequent commits are made on <a href="https://github.com/pixelfed/pixelfed">GitHub</a>, the community is open-minded and various ways of participating are possible, with Dan always being somewhere besides the coding activities, always going with a hint or a helping hand. Once you don’t want to go with an own instance (it still may be tricky if you build and maintain from the scratch if you don’t exactly know what you need to do and in which order things should be done), you can always opt-in for one of the more or less known instances. With choosing the instance you like or which may best reflect your needs and interests, the ActivityPub-aspects of Federation and De-Centralization are put into the focus - just like we know it from Mastodon  - finally leaving Instagram isn’t the big problem anymore.</p>
+
+<p><img src="../images/nordicshutter_welcome.jpg" alt="My Pixelfed-instance" /></p>
+
+<h2 id="bookwyrm">BookWyrm</h2>
+
+<p>BookWyrm is a solution also built on ActivityPub and a great successor for LibraryThing or GoodReads. By using the protocol Mastodon, Pixelfed and many other are running on, it inter-operates with different instances of BookWyrm and other ActivityPub compliant services. This means you can run an instance for your book club and still follow your friend who posts on a completely different servers with different, book-related collections. It also means that your friend on Mastodon can read and comment on a book review that you post on your BookWyrm-instance.</p>
+
+<p><img src="../images/bookwyrm_website.jpg" alt="How to join BookWyrm" /></p>
+
+<p>A long time ago, I used to track my books with a Desktop-based Mac-software named <a href="https://www.bruji.com/bookpedia/">Bookpedia</a>. With the relevance of classical apps decreasing and people rather turning to online services, Bookpedia somehow fell behind. Besides myself listening more to audio books than actually reading those (a trend I even consider to be nasty from my own point of view), also the development of Bookpedia seemed to slow down and so the latest iteration 6.2.1 was released by the end of 2021. As times have changed, LibraryThing or GoodReads as modern Internet-based services popped up but when BookWyrm came along, the mixture of self-hosted data-control, ActivityPub-integration and connection to other instances for book background data like ISBN, ASIN, cover artwork etc. made it a no-brainer.</p>
+
+<p>Without the basic purpose of just cataloguing my bookshelves, I checked out the „mother instance“ <a href="https://bookwyrm.social/">bookwyrm.social</a> and after fetching the look and feel of BookWyrm and because of already hosting my own Mastodon- and Pixelfed-instance, I went to spin up my BookWyrm-instance as well! The <a href="https://docs.joinbookwyrm.com/">docs</a> are written pretty straightforward and despite my love for Docker-based deployments, I went with the non-Dockerized version this time, paired with the same S3 storage backend that also fuels my other ActivityPub instances. That being said, BookWyrm is an ideal and modern approach towards a book-reading- and tracking-based service that supports ActivityPub. With following my account on BookWyrm, my friends and followers on Mastodon see what I am currently reading (or listening!) and besides, I finally can track my own reading behavior and the (audio-) books I own!</p>
+
+<p><img src="../images/bookwyrm_pifferi.jpg" alt="My BookWyrm-instance" /></p>
+
+<h2 id="verdict">Verdict</h2>
+
+<p>Rarely before I have felt such passion and joy when talking about new trends in the Internet during the last years - or what’s left from the original Internet as it once used to be. With Federation, De-Centralization and growing independence from Big Tech and learning from (at least) Twitter’s demise many people have realized that things must change - and a real change was long overdue. Maybe we don’t need the ad-polluted streams of the common Social Media anymore - maybe we don’t even need the overloaded content there anymore. Maybe stepping back to a more curated, smaller account of contents is the proper way of turning Social Media back to something we may use instead of being the product?</p>
+
+<p>Alas, with great power comes great responsibility and so the moderation of instances (as long as you don’t use a single-user-instance just for your own joys) is a frequent topic within the current growth. Without centralization, there is no single instance taking care of that so it is especially within the responsibility of the instance’s admin to take care of unwanted content or spam etc. - if you like it or not. Based on this, everyone should wisely choose the mother instance of the single services and weight in if the server rules appeal to the specific user’s imagination. While ActivityPub makes its way throughout the web, also the interoperability between instances is still a challenge: While Mastodon at least offers the options to move an account to another domain, this option and especially contents like likes, media etc. are still to be integrated in Pixelfed and BookWyrm - the goal: No one wanting to switch to another instance should start from zero or manually repost everything (which is, experienced by myself, a torture!) piece by piece.</p>
+
+<p><img src="../images/fedidb_stats.jpg" alt="Stats from fedidb.org" /></p>
+
+<p>Apart from that, the Fediverse is growing and there are lots of products waiting for us to discover them. Pixelfed-founder Daniel Supernault is also taking care of <a href="https://fedidb.org/">FediDB</a>, a project summing up statistics for the Fediverse and the single software solutions empowering it. There is a <a href="https://fedidb.org/software">big amount of software available and many platforms</a> are waiting for new users - by using the ActivityPub-protocol, all these single places can talk to each other, like posts from other platforms and even boost those. Less poison, less hate, less misunderstanding and the connections between single software components founded on the ActivityPub-protocol are about to revive the „classic“ Internet from earlier days and I hope that this trend will get strengthened, opening the door for a decentralized social media of many kinds apart from the Big Tech-monoliths that somehow seem to be rather old-fashioned and boring when being compared to this movement of modern, federated Social Networks in the internet of the 2020s!</p>
+
+<p class="note">Did you enjoy this post? Share it with a friend!</p>
+
+<p class="tip">Follow me on <a href="https://metalized.net/@oliver">Mastodon</a>. All my other links are available on <a href="https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5">Keyoxide</a>!</p>
+
+<p class="important">If you’d like to say hi, my contact information is <a href="https://me.pifferi.io">here</a>!</p>
+
+<p class="warning">If this post resonated with you, leave a comment in any way!</p>
+
+        </div>
+      </article>
+
+      <div class="share">
+  <div class="share__title">Share this:</div>
+  <ul class="share__list list-reset">
+    <li class="share__item">
+      <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/The-Fediverse-a-vivid-and-modern-approach-to-todays-social-network-landscape&amp;media=http://localhost:4000/images/fediverse_logo.jpg&amp;description=The%20Fediverse%20-%20%20A%20vivid%20and%20modern%20approach%20to%20today%E2%80%99s%20Social%20Network-landscape"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest"
+      rel="nofollow"><i class="fa-brands fa-pinterest"></i></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/The-Fediverse-a-vivid-and-modern-approach-to-todays-social-network-landscape&title=The%20Fediverse%20-%20%20A%20vivid%20and%20modern%20approach%20to%20today%E2%80%99s%20Social%20Network-landscape&summary=&source="
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+    </li>
+  </ul>
+</div>
+      <div class="post__navigation">
+  
+  <div class="post__prev">
+    
+    <a href="/How-to-upgrade-Debian11-Bullseye-to-Debian-12-Bookworm" class="prev__image">
+      
+      <img class="lazy" data-src="/images/debian12.jpg" alt="The Fediverse -  A vivid and modern approach to today’s Social Network-landscape">
+    </a>
+    
+    <div class="prev__box">
+      <span class="post__nav__prev">Older post</span>
+      <h2 class="post__nav__title"><a href="/How-to-upgrade-Debian11-Bullseye-to-Debian-12-Bookworm">How to upgrade Debian 11 Bullseye to Debian 12 Bookworm</a></h2>
+    </div>
+  </div>
+  
+
+  
+  <div class="post__next">
+    <div class="next__box">
+      <span class="post__nav__next">Newer post</span>
+      <h2 class="post__nav__title"><a href="/Stop-worrying-about-people-that-arent-worried-about-you">Stop worrying about people that aren’t worried about you</a></h2>
+    </div>
+    
+    <a href="/Stop-worrying-about-people-that-arent-worried-about-you" class="next__image">
+      
+      <img class="lazy" data-src="/images/anthony-tori-9qYKMbBCFjc-unsplash.jpg" alt="The Fediverse -  A vivid and modern approach to today’s Social Network-landscape">
+    </a>
+    
+  </div>
+  
+</div>
+      
+      
+
+
+
+
+
+<div class="related-posts is-related">
+  <div class="section__info">
+    <div class="section__head">
+      <h2 class="section__title">Related</h2>
+    </div>
+  </div>
+  <div class="view-list">
+
+  
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/Digital-Independence-Day-March">
+        <img class="lazy" data-src="/images/digital_independence_day.jpg" alt="The third Digital Independence Day in 2026">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=internet"
+          class="article__tag" style="background: var(--dark-gray);">
+          Internet
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/Digital-Independence-Day-March">The third Digital Independence Day in 2026</a>
+      </h2>
+
+      <p class="article__excerpt">### It’s no secret that these days we need certain hooks to help us remember everyday things or groups — just look at World Backup Day or System Administrato...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2026-03-01T00:00:00+01:00">01 Mar, 2026</time>
+        <div class="article__minutes">
+          
+          
+            4 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/is-bluesky-worth-a-visit">
+        <img class="lazy" data-src="/images/bluesky.jpg" alt="Is Bluesky worth a visit?">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=internet"
+          class="article__tag" style="background: var(--dark-gray);">
+          Internet
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/is-bluesky-worth-a-visit">Is Bluesky worth a visit?</a>
+      </h2>
+
+      <p class="article__excerpt">### While many people and even corporate brands are fleeing from X - formerly known as "Twitter" - the question is which service is able to provide shelter. ...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2023-11-04T00:00:00+01:00">04 Nov, 2023</time>
+        <div class="article__minutes">
+          
+          
+            8 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/The-unhealthful-peak-of-internet-service-pricing">
+        <img class="lazy" data-src="/images/tarun-dhiman-RQqFD_XH-MU-unsplash.jpg" alt="The unhealthful peak of Internet service pricing">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=internet"
+          class="article__tag" style="background: var(--dark-gray);">
+          Internet
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/The-unhealthful-peak-of-internet-service-pricing">The unhealthful peak of Internet service pricing</a>
+      </h2>
+
+      <p class="article__excerpt">### While we mainly rely on subscription-based Internet services these days, it is more than obvious that, with saturation of demand, the peak of user accept...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2023-10-27T00:00:00+02:00">27 Oct, 2023</time>
+        <div class="article__minutes">
+          
+          
+            9 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+          
+  </div>
+</div>
+    </div>
+
+    <div class="col col-4 col-d-12">
+      <aside class="sidebar">
+        
+        
+<div class="widget widget-social">
+  <ul class="widget-social__list list-reset">
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+        aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+        aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+        aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="/feed.xml" target="_blank" rel="noopener"
+        aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+
+
+
+        
+<div class="widget widget-tags">
+  <div class="widget-sidebar-head">
+    <h2 class="widget-sidebar-title">Topics</h2>
+  </div>
+
+  <div class="tag-cloud">
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=history"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        History
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=internet"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Internet
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=apple"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Apple
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=security"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Security
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=thoughts"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Thoughts
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=linux"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Linux
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=music"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Music
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=software"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Software
+      </a>
+    
+  </div>
+</div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- end post -->
+    </main>
+    <!-- end content -->
+
+    <!-- begin footer -->
+<footer class="footer">
+
+  <div class="footer__inner">
+    <div class="container">
+      <div class="row">
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__info__title">The Binary Journal</h3>
+          
+          <p class="footer__info__description">Here, I share my thoughts, news and tutorials while keeping control over my digital world and my own mind in real life. Dive in, get inspired and feel free to join me on this digital and analog trip!</p>
+          
+          
+          <div class="footer__social">
+            <ul class="footer__social__list list-reset">
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+                  aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+                  aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+                  aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="/feed.xml" target="_blank" rel="noopener"
+                  aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__title">Recent Posts</h3>
+          <div class="footer__recent-posts">
+            
+            <div class="footer__recent-content">
+              
+              <a href="/Digital-Independence-Day-March" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/digital_independence_day.jpg" alt="The third Digital Independence Day in 2026">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/Digital-Independence-Day-March">The third Digital Independence Day in 2026</a></h3>
+                <time class="footer__recent-date" datetime="2026-03-01T00:00:00+01:00">01 Mar, 2026</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/andrew-neel-hZkOZGtlA5w-unsplash.jpg" alt="How to skip the ChatGPT for Mac waiting list and get access now">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now">How to skip the ChatGPT for Mac waiting list and get access now</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-26T00:00:00+02:00">26 May, 2024</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/vmware-kills-players-makes-pro-free-for-personal-use" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/fusion-ws-heroes-1.jpg" alt="VMware kills Players, makes Pro free for personal use">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/vmware-kills-players-makes-pro-free-for-personal-use">VMware kills Players, makes Pro free for personal use</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-14T00:00:00+02:00">14 May, 2024</time>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+        <div class="col col-2 col-d-6 col-m-12">
+          <div class="footer-nav__left">
+            <h3 class="footer__title">Menu</h3>
+            <div class="footer-nav__list">
+            
+            
+              <a class="footer-nav__link" href="/">Home</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/about/">About</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/archive/">Archive</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/contact/">Contact</a>
+            
+            
+            </div>
+          </div>
+        </div>
+        
+
+        
+        
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="copyright">2026 &copy; <a href="/">The Binary Journal</a>. General pictures - unless stated otherwise - gratefully taken from the wonderful <a href="https://unsplash.com">unsplash.com.</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- end footer -->
+  </div>
+  <!-- end global wrap -->
+
+  <div class="top" title="Top"><i class="fa-solid fa-arrow-up"></i></div>
+
+  <div class="images-overlay"></div>
+
+  <script src="/js/scripts.js"></script>
+  <script src="/js/common.js"></script>
+</body>
+
+</html>

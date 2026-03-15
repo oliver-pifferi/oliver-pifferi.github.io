@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Is Bluesky worth a visit?</title>
+  <meta name='description' content='Beyond the Algorithm - Stories of a Digital Soul'>
+
+  <link rel="canonical" href="http://localhost:4000/is-bluesky-worth-a-visit">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Is Bluesky worth a visit? – The Binary Journal">
+  <meta name="twitter:description" content="While many people and even corporate brands are fleeing from X - formerly known as “Twitter” - the question is which service is able to provide shelter. The Fediverse with products like Mastodon or Misskey/Calckey/Firefish is definitely an option while Jack Dorsey, former Twitter CEO and Co-founder, tries to gather up the masses with his latest project, Bluesky.
+">
+  <meta name="twitter:image:src" content="http://localhost:4000/images/bluesky.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Is Bluesky worth a visit? – The Binary Journal">
+  <meta property="og:description" content="While many people and even corporate brands are fleeing from X - formerly known as “Twitter” - the question is which service is able to provide shelter. The Fediverse with products like Mastodon or Misskey/Calckey/Firefish is definitely an option while Jack Dorsey, former Twitter CEO and Co-founder, tries to gather up the masses with his latest project, Bluesky.
+">
+  <meta property="og:image" content="http://localhost:4000/images/bluesky.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+  <script>
+    const defaultTheme = "dark";
+    const isToggleEnabled = true;
+    const userTheme = localStorage.getItem("theme");
+
+    function setTheme(mode) {
+      if (mode === "dark") {
+        document.documentElement.setAttribute("dark", "");
+        document.documentElement.classList.add("dark-mode");
+      } else if (mode === "light") {
+        document.documentElement.removeAttribute("dark");
+        document.documentElement.classList.remove("dark-mode");
+      }
+    }
+
+    if (isToggleEnabled) {
+      if (userTheme) {
+        setTheme(userTheme);
+      } else {
+        setTheme(defaultTheme);
+      }
+    } else {
+      setTheme(defaultTheme);
+    }
+
+    if (localStorage.getItem("classView") === "list") {
+      document.documentElement.setAttribute("list", "");
+      document.documentElement.classList.add('view-list');
+    }
+  </script>
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  
+
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+    <!-- begin header -->
+<header class="header">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            The Binary Journal
+          
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <div class="main-nav__box">
+            <ul class="nav__list list-reset">
+              
+              
+              <li class="nav__item">
+                <a href="/" class="nav__link">Home</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/about/" class="nav__link">About</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/archive/" class="nav__link">Archive</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/contact/" class="nav__link">Contact</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+
+        <div class="nav-button">
+          
+          <div class="color-scheme-button">
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72"/>
+                </svg>
+              </div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                    <path stroke-linecap="round" d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15"/>
+                    <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z"/>
+                    <path stroke-linecap="round" d="M24 45v-3.15"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="search-button">
+            <svg class="search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+            <span class="search-button__text">Search posts...</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- begin search -->
+<div class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search__box">
+          <div class="search__group">
+            <i class="search__close fa-solid fa-xmark"></i>
+            <label for="js-search-input" class="screen-reader-text">Search for Blog</label>
+            <input type="text" id="js-search-input" class="search__text" autocomplete="off"
+              placeholder="Type to search...">
+          </div>
+          <div class="search-results-list view-list" id="js-results-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search__overlay"></div>
+</div>
+<!-- end search -->
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      <!-- begin post -->
+<div class="container">
+
+  <div class="row">
+    <div class="col col-8 col-d-12">
+
+      <div class="post-head">
+
+        
+        
+        <div class="post-image">
+          <img class="lazy" data-src="/images/bluesky.jpg" alt="Is Bluesky worth a visit?">
+        </div>
+        
+        
+
+        <div class="post-info">
+          
+          <div class="post-tags">
+            
+            <a href="/tags/?tag=internet" class="post-tag"
+              style="background: var(--dark-gray);">Internet</a>
+            
+          </div>
+          
+
+          <h1 class="post-title">Is Bluesky worth a visit?</h1>
+
+          <div class="post-meta">
+            <a href="/about/" class="post-meta__image">
+              <img class="lazy" data-src="/images/01-1.jpg"
+                alt="Oliver Pifferi">
+            </a>
+
+            <div class="post-meta__content">
+              <a class="post-meta__author" href="/about/">Oliver Pifferi</a>
+              <div class="post-meta__bottom">
+                <time class="post-date" datetime="2023-11-04T00:00:00+01:00">04 Nov, 2023</time> –
+                <span class="post-minutes">
+                  
+                   8 min read  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <article class="post">
+        <div class="post__content">
+          
+
+          <h3 id="while-many-people-and-even-corporate-brands-are-fleeing-from-x---formerly-known-as-twitter---the-question-is-which-service-is-able-to-provide-shelter-the-fediverse-with-products-like-mastodon-or-misskeycalckeyfirefish-is-definitely-an-option-while-jack-dorsey-former-twitter-ceo-and-co-founder-tries-to-gather-up-the-masses-with-his-latest-project-bluesky">While many people and even corporate brands are fleeing from X - formerly known as “Twitter” - the question is which service is able to provide shelter. The Fediverse with products like Mastodon or Misskey/Calckey/Firefish is definitely an option while Jack Dorsey, former Twitter CEO and Co-founder, tries to gather up the masses with his latest project, Bluesky.</h3>
+
+<p>The Social Network-landscape is shattered these days. While the downfall of X was somehow a predictable process, it is still astonishing how fast a service that once was a synonym for short messaging is ruined while (seemingly) hazarding all consequences. Anyway, each failure is a chance for optimization and so other networks with the focus on decentralization grew over the years - one of them, virtually flagshipping The Fediverse, was Mastodon. Besides, and somehow lurking in the shadows, the virtual successor of Twitter has been in the works for four years using an investment of nearly 13 millions USD: Bluesky, lead by Jay Graber and former Twitter-CEO and co-founder Jack Dorsey - a decentralized new social network based upon the <a href="https://atproto.com/guides/overview">AT-protocol</a>.</p>
+
+<p><img src="../images/boliviainteligente-elSx3uwGhBw-unsplash.jpg" alt="X dot com" /></p>
+
+<h2 id="from-bluebird-to-bluesky">From bluebird to Bluesky</h2>
+
+<p>First of all, Bluebird’s <a href="https://bsky.app">website</a> looks quite simple - and yes, it’s work in progress. Getting onboarded isn’t as easy because the access to the new Social Network is - in my eyes - crippled intentionally. Not everyone can sign up, people need invite codes - everyone of you who thought this scenario reminding on the old days of early OnePlus-smartphones has been put to a grave is wrong. You need an invite code to play in the sandbox of Bluesky - and getting those may be a hassle.</p>
+
+<p><img src="../images/Bluesky_start.jpg" alt="Simply blue" /></p>
+
+<p>As always, celebrities and people or organizations of public interest join the platform to attract new followers and subscribers. In moments where many of those flee from X.com, Bluesky is a welcomed new home and especially here in Germany, this escape-scenario drastically increased throughout the last months with many famous accounts migrating to Bluesky: Good bait catches fine fish and with a solid base of well-known accounts, people automatically get interested in following those.</p>
+
+<p><img src="../images/Bluesky_register.jpg" alt="Registering" /></p>
+
+<p>Should you be able to get an invite code (users who are with the platform a little bit longer get those for example), there is no obstacle towards subscribing to Bluesky anymore as the web interface is definitely not a complicated one: Create your account by choosing your provider, enter your invite code (or join the waitlist), pick your handle, enter your E-mail address and password and you’re ready to go.</p>
+
+<p><img src="../images/Bluesky_invite.jpg" alt="Where's the invite?" /></p>
+
+<p>It could be that easy if the trending thing about entering Bluesky wasn’t the artificially-truncated invite code thing. I personally don’t know if this is because of making the service more “exclusive” or keeping spammers and bots outside - finally, this scenario does its work.</p>
+
+<p>There are different ways to get an invite - just be patient and wait until your spot in the waitlist is next, get a code from another Bluesky-user or look for initiatives like, for example, the <a href="https://mailbox.org/en/post/mailbox-org-opens-bluesky-invitation-code-exchange-platform">invitation exchange platform</a> of German provider mailbox.org - paying customers can request an invite or share their codes with others: In my case, I didn’t wait a half day until (unexpectedly) the mail with an invite reached me (pure luck or less demand - who knows?)-</p>
+
+<p><img src="../images/Bluesky_waitlist.jpg" alt="Joining the waitlist" /></p>
+
+<h2 id="first-steps">First steps</h2>
+
+<p>Once you made it to scavenge an invite code and used it for good, you probably have created your account with the @bsky.social-appendix and the outlook will be quite similar to Twitter in earlier days. Indeed Bluesky focuses on the essentials while missing some of those well-known ones, but you definitely will feel familiar straight from the first visit.</p>
+
+<p><img src="../images/Bluesky_overview.jpg" alt="Overview" /></p>
+
+<p>On the left pane, you see self-declaring links for your home site, the general feed, current notifications, moderation statistics, your profile and general settings. The middle shows the feed with accounts you’ve subscribed to, the right side displays a search box, an option to discover other accounts and more feeds. The latter are indeed custom algorithms that users can build with a little coding expertise as documented <a href="https://github.com/bluesky-social/feed-generator">here</a>.</p>
+
+<p><img src="../images/jelleke-vanooteghem-gnxb59lGU1M-unsplash.jpg" alt="Bluesky" /></p>
+
+<h2 id="verification">Verification</h2>
+
+<p>There is no blue, yellow, gold, whatsoever checkmark to verify your identity (yet). Instead, you can change your handle, for example @oliverpifferi.bsky.social, to - in my case - @pifferi.info by adding a certain DNS-entry to a domain you own. It’s still not the way of a knightly accolade, but what can proof your online identity better than access to the DNS-settings of a domain you own by yourself?</p>
+
+<p>First of all, enter the settings and use the “change handle”-option just like you would do when changing it into another @bsky.social-tag.</p>
+
+<p><img src="../images/Bluesky_settings.jpg" alt="The way to change your handle" /></p>
+
+<p>Click on the “I have my own domain”-option here:</p>
+
+<p><img src="../images/Bluesky_change_handle.jpg" alt="Do you have your own domain?" /></p>
+
+<p>Now another windows will appear with the verification-settings you need to enter into the DNS-settings of your domain. Enter the domain in the upper field and see which TXT-entry will be generated afterwards. This entry with the _atproto-prefix and the specific value must then be added to your site’s DNS-configuation as a new entry.</p>
+
+<p><img src="../images/bluesky_change_handle_settings.jpg" alt="The way to change your handle" /></p>
+
+<p>One you have done this in a separate window, click on “Verify DNS record” and, depending on your provider, your account will be verified, permanently changing your handle to, in this case, @alice.com (or, @pifferi.info in mine). In case you don’t have access to the DNS-console, you may also place a TXT-file in the webroot of your specific website and verify it via this way. Further information on verification on Bluesky can be found <a href="https://blueskyweb.zendesk.com/hc/en-us/articles/19001802873101-How-to-Set-your-Domain-as-your-Handle">here</a>!</p>
+
+<h2 id="finally">Finally…</h2>
+
+<p>Bluesky looks like X/Twitter once used to look. It still misses features that many former users got used to and while the whole platform is definitely in the status of “work in progress”, it is definitely fill up with many people flooding from X or users who run their Bluesky-account parallel to their Mastodon-one - which is quite interesting. If you don’t mind starting with a new social network created by the same crypto bro that once was in charge of ancient Twitter before selling the whole platform (and if you’re okay with this possibly happening again), Bluesky may stand for the simplicity that once made the former bluebird that popular. The classical PR-B/S of “federated” and “decentralized” is something that needs to be proven in the future - without the approach of an open, really decentralized and federated standard, just another siloed platform has just been born.</p>
+
+<p>Until then, and with direct messages possibly being integrated sometimes in the future, Bluesky may be an alternative based on “yet another protocol”. It looks slim, is trimmed down to basic functions and you will probably find lots of people that fled from X - but, as always, it will be interesting to watch how this platform will grow and develop once the artificially-shortened signup process has been erased and in how far it can compete with the Fediverse in terms of “building a healthier community”. Most of the people fleeing from “the other side” need to find a new comfortable home, just a few of them will care about where the data is being stored. Considering that all your posts on Bluesky are available via API-endpoints without any kind of authentication at the time of writing (see my post in raw <a href="https://bsky.social/xrpc/com.atproto.repo.listRecords?repo=pifferi.info&amp;collection=app.bsky.feed.post">here</a> for example), “Privacy” could also be an interesting topic to deal with when opting in for any new platform.</p>
+
+<p><img src="../images/ehimetalor-akhere-unuabona-TvJk52iLxQA-unsplash.jpg" alt="Stay connected" /></p>
+
+<h2 id="stream-of-time">Stream of time</h2>
+
+<p>At last, time will (as always) tell but as someone who changed to Mastodon for quite a while and running an own instance, even Bluesky has its charm and reminds on times where Social Networking was less toxic than it is today. In the end, usability and the people, groups and institutions on the specific platform will shape the foundation for more or less success - this is a challenge all solutions of the “post-Twitter”-era have to deal with inevitably.</p>
+
+<p>Considering the results of all these thoughts, Bluesky IS worth a visit at the time of writing, despite the silly invite-system - but don’t expect a fully-matured platform like the former Twitter or Mastodon &amp; Co!  It still is work in progress and although the current approach serves our nostalgic memories quite well, missing hashtags-support, no possible video-uploads or even basic things like 2FA in terms of security show that there is still a long way to go. Speaking of federation and decentralization I am also quite curious if the self-hosting on own Bluesky-servers based upon the AT-protocol will be possible like we know this from the Fediverse-solutions. Time will tell but any option is better than the remains of the social network that once made use to know what’s going on in the world with 140 characters!</p>
+
+<p class="note">Did you enjoy this post? Share it with a friend!</p>
+
+<p class="tip">Follow me on <a href="https://metalized.net/@oliver">Mastodon</a>. All my other links are available on <a href="https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5">Keyoxide</a>!</p>
+
+<p class="important">If you’d like to say hi, my contact information is <a href="https://me.pifferi.io">here</a>!</p>
+
+<p class="warning">If this post resonated with you, leave a comment in any way!</p>
+
+        </div>
+      </article>
+
+      <div class="share">
+  <div class="share__title">Share this:</div>
+  <ul class="share__list list-reset">
+    <li class="share__item">
+      <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/is-bluesky-worth-a-visit&amp;media=http://localhost:4000/images/bluesky.jpg&amp;description=Is%20Bluesky%20worth%20a%20visit?"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest"
+      rel="nofollow"><i class="fa-brands fa-pinterest"></i></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/is-bluesky-worth-a-visit&title=Is%20Bluesky%20worth%20a%20visit?&summary=&source="
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+    </li>
+  </ul>
+</div>
+      <div class="post__navigation">
+  
+  <div class="post__prev">
+    
+    <a href="/The-unhealthful-peak-of-internet-service-pricing" class="prev__image">
+      
+      <img class="lazy" data-src="/images/tarun-dhiman-RQqFD_XH-MU-unsplash.jpg" alt="Is Bluesky worth a visit?">
+    </a>
+    
+    <div class="prev__box">
+      <span class="post__nav__prev">Older post</span>
+      <h2 class="post__nav__title"><a href="/The-unhealthful-peak-of-internet-service-pricing">The unhealthful peak of Internet service pricing</a></h2>
+    </div>
+  </div>
+  
+
+  
+  <div class="post__next">
+    <div class="next__box">
+      <span class="post__nav__next">Newer post</span>
+      <h2 class="post__nav__title"><a href="/season-greetings-and-goodbye-forever-2023">Season Greetings and goodbye forever, 2023!</a></h2>
+    </div>
+    
+    <a href="/season-greetings-and-goodbye-forever-2023" class="next__image">
+      
+      <img class="lazy" data-src="/images/xmas_tree.jpg" alt="Is Bluesky worth a visit?">
+    </a>
+    
+  </div>
+  
+</div>
+      
+      
+
+
+
+
+
+<div class="related-posts is-related">
+  <div class="section__info">
+    <div class="section__head">
+      <h2 class="section__title">Related</h2>
+    </div>
+  </div>
+  <div class="view-list">
+
+  
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/Digital-Independence-Day-March">
+        <img class="lazy" data-src="/images/digital_independence_day.jpg" alt="The third Digital Independence Day in 2026">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=internet"
+          class="article__tag" style="background: var(--dark-gray);">
+          Internet
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/Digital-Independence-Day-March">The third Digital Independence Day in 2026</a>
+      </h2>
+
+      <p class="article__excerpt">### It’s no secret that these days we need certain hooks to help us remember everyday things or groups — just look at World Backup Day or System Administrato...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2026-03-01T00:00:00+01:00">01 Mar, 2026</time>
+        <div class="article__minutes">
+          
+          
+            4 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/The-unhealthful-peak-of-internet-service-pricing">
+        <img class="lazy" data-src="/images/tarun-dhiman-RQqFD_XH-MU-unsplash.jpg" alt="The unhealthful peak of Internet service pricing">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=internet"
+          class="article__tag" style="background: var(--dark-gray);">
+          Internet
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/The-unhealthful-peak-of-internet-service-pricing">The unhealthful peak of Internet service pricing</a>
+      </h2>
+
+      <p class="article__excerpt">While we mainly rely on subscription-based Internet services these days, it is more than obvious that, with saturation of demand, the peak of user acceptance...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2023-10-27T00:00:00+02:00">27 Oct, 2023</time>
+        <div class="article__minutes">
+          
+          
+            9 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/The-Fediverse-a-vivid-and-modern-approach-to-todays-social-network-landscape">
+        <img class="lazy" data-src="/images/fediverse_logo.jpg" alt="The Fediverse -  A vivid and modern approach to today’s Social Network-landscape">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=internet"
+          class="article__tag" style="background: var(--dark-gray);">
+          Internet
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/The-Fediverse-a-vivid-and-modern-approach-to-todays-social-network-landscape">The Fediverse -  A vivid and modern approach to today’s Social Network-landscape</a>
+      </h2>
+
+      <p class="article__excerpt">When I once discovered Mastodon, the Fediverse was already a nice approach in helping to rebuild the polluted Social Network-landscape.
+
+But, based upon the ...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2023-09-01T00:00:00+02:00">01 Sep, 2023</time>
+        <div class="article__minutes">
+          
+          
+            7 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+          
+  </div>
+</div>
+    </div>
+
+    <div class="col col-4 col-d-12">
+      <aside class="sidebar">
+        
+        
+<div class="widget widget-social">
+  <ul class="widget-social__list list-reset">
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+        aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+        aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+        aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="/feed.xml" target="_blank" rel="noopener"
+        aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+
+
+
+        
+<div class="widget widget-tags">
+  <div class="widget-sidebar-head">
+    <h2 class="widget-sidebar-title">Topics</h2>
+  </div>
+
+  <div class="tag-cloud">
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=history"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        History
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=internet"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Internet
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=apple"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Apple
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=security"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Security
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=thoughts"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Thoughts
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=linux"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Linux
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=music"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Music
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=software"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Software
+      </a>
+    
+  </div>
+</div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- end post -->
+    </main>
+    <!-- end content -->
+
+    <!-- begin footer -->
+<footer class="footer">
+
+  <div class="footer__inner">
+    <div class="container">
+      <div class="row">
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__info__title">The Binary Journal</h3>
+          
+          <p class="footer__info__description">Here, I share my thoughts, news and tutorials while keeping control over my digital world and my own mind in real life. Dive in, get inspired and feel free to join me on this digital and analog trip!</p>
+          
+          
+          <div class="footer__social">
+            <ul class="footer__social__list list-reset">
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+                  aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+                  aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+                  aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="/feed.xml" target="_blank" rel="noopener"
+                  aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__title">Recent Posts</h3>
+          <div class="footer__recent-posts">
+            
+            <div class="footer__recent-content">
+              
+              <a href="/Digital-Independence-Day-March" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/digital_independence_day.jpg" alt="The third Digital Independence Day in 2026">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/Digital-Independence-Day-March">The third Digital Independence Day in 2026</a></h3>
+                <time class="footer__recent-date" datetime="2026-03-01T00:00:00+01:00">01 Mar, 2026</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/andrew-neel-hZkOZGtlA5w-unsplash.jpg" alt="How to skip the ChatGPT for Mac waiting list and get access now">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now">How to skip the ChatGPT for Mac waiting list and get access now</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-26T00:00:00+02:00">26 May, 2024</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/vmware-kills-players-makes-pro-free-for-personal-use" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/fusion-ws-heroes-1.jpg" alt="VMware kills Players, makes Pro free for personal use">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/vmware-kills-players-makes-pro-free-for-personal-use">VMware kills Players, makes Pro free for personal use</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-14T00:00:00+02:00">14 May, 2024</time>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+        <div class="col col-2 col-d-6 col-m-12">
+          <div class="footer-nav__left">
+            <h3 class="footer__title">Menu</h3>
+            <div class="footer-nav__list">
+            
+            
+              <a class="footer-nav__link" href="/">Home</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/about/">About</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/archive/">Archive</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/contact/">Contact</a>
+            
+            
+            </div>
+          </div>
+        </div>
+        
+
+        
+        
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="copyright">2026 &copy; <a href="/">The Binary Journal</a>. General pictures - unless stated otherwise - gratefully taken from the wonderful <a href="https://unsplash.com">unsplash.com.</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- end footer -->
+  </div>
+  <!-- end global wrap -->
+
+  <div class="top" title="Top"><i class="fa-solid fa-arrow-up"></i></div>
+
+  <div class="images-overlay"></div>
+
+  <script src="/js/scripts.js"></script>
+  <script src="/js/common.js"></script>
+</body>
+
+</html>
