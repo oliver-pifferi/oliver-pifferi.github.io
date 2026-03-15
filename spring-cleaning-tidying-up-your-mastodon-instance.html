@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Spring Cleaning - Tidying up your Mastodon-instance</title>
+  <meta name='description' content='Beyond the Algorithm - Stories of a Digital Soul'>
+
+  <link rel="canonical" href="https://thebinaryjournal.com/spring-cleaning-tidying-up-your-mastodon-instance">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spring Cleaning - Tidying up your Mastodon-instance – The Binary Journal">
+  <meta name="twitter:description" content="After six months of running a small, two user Mastodon-instance, I was astonished to see the media growth over the time so it was way overdue to reflect how to do some spring cleaning in this cozy, self-hosted space.
+">
+  <meta name="twitter:image:src" content="https://thebinaryjournal.com/images/mastodon_hero.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Spring Cleaning - Tidying up your Mastodon-instance – The Binary Journal">
+  <meta property="og:description" content="After six months of running a small, two user Mastodon-instance, I was astonished to see the media growth over the time so it was way overdue to reflect how to do some spring cleaning in this cozy, self-hosted space.
+">
+  <meta property="og:image" content="https://thebinaryjournal.com/images/mastodon_hero.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+  <script>
+    const defaultTheme = "dark";
+    const isToggleEnabled = true;
+    const userTheme = localStorage.getItem("theme");
+
+    function setTheme(mode) {
+      if (mode === "dark") {
+        document.documentElement.setAttribute("dark", "");
+        document.documentElement.classList.add("dark-mode");
+      } else if (mode === "light") {
+        document.documentElement.removeAttribute("dark");
+        document.documentElement.classList.remove("dark-mode");
+      }
+    }
+
+    if (isToggleEnabled) {
+      if (userTheme) {
+        setTheme(userTheme);
+      } else {
+        setTheme(defaultTheme);
+      }
+    } else {
+      setTheme(defaultTheme);
+    }
+
+    if (localStorage.getItem("classView") === "list") {
+      document.documentElement.setAttribute("list", "");
+      document.documentElement.classList.add('view-list');
+    }
+  </script>
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  
+
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+    <!-- begin header -->
+<header class="header">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            The Binary Journal
+          
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <div class="main-nav__box">
+            <ul class="nav__list list-reset">
+              
+              
+              <li class="nav__item">
+                <a href="/" class="nav__link">Home</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/archive/" class="nav__link">Archive</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/contact/" class="nav__link">Contact</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+
+        <div class="nav-button">
+          
+          <div class="color-scheme-button">
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72"/>
+                </svg>
+              </div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                    <path stroke-linecap="round" d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15"/>
+                    <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z"/>
+                    <path stroke-linecap="round" d="M24 45v-3.15"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="search-button">
+            <svg class="search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+            <span class="search-button__text">Search posts...</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- begin search -->
+<div class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search__box">
+          <div class="search__group">
+            <i class="search__close fa-solid fa-xmark"></i>
+            <label for="js-search-input" class="screen-reader-text">Search for Blog</label>
+            <input type="text" id="js-search-input" class="search__text" autocomplete="off"
+              placeholder="Type to search...">
+          </div>
+          <div class="search-results-list view-list" id="js-results-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search__overlay"></div>
+</div>
+<!-- end search -->
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      <!-- begin post -->
+<div class="container">
+
+  <div class="row">
+    <div class="col col-8 col-d-12">
+
+      <div class="post-head">
+
+        
+        
+        <div class="post-image">
+          <img class="lazy" data-src="/images/mastodon_hero.jpg" alt="Spring Cleaning - Tidying up your Mastodon-instance">
+        </div>
+        
+        
+
+        <div class="post-info">
+          
+          <div class="post-tags">
+            
+            <a href="/tags/?tag=linux" class="post-tag"
+              style="background: var(--dark-gray);">Linux</a>
+            
+          </div>
+          
+
+          <h1 class="post-title">Spring Cleaning - Tidying up your Mastodon-instance</h1>
+
+          <div class="post-meta">
+            <a href="/about/" class="post-meta__image">
+              <img class="lazy" data-src="/images/01-1.jpg"
+                alt="Oliver Pifferi">
+            </a>
+
+            <div class="post-meta__content">
+              <a class="post-meta__author" href="/about/">Oliver Pifferi</a>
+              <div class="post-meta__bottom">
+                <time class="post-date" datetime="2024-02-25T00:00:00+01:00">25 Feb, 2024</time> –
+                <span class="post-minutes">
+                  
+                   6 min read  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <article class="post">
+        <div class="post__content">
+          
+
+          <h3 id="after-six-months-of-running-a-small-two-user-mastodon-instance-i-was-astonished-to-see-the-media-growth-over-the-time-so-it-was-way-overdue-to-reflect-how-to-do-some-spring-cleaning-in-this-cozy-self-hosted-space">After six months of running a small, two user Mastodon-instance, I was astonished to see the media growth over the time so it was way overdue to reflect how to do some spring cleaning in this cozy, self-hosted space.</h3>
+
+<p>Despite carefully selecting and tuning Mastodon’s internal retention policies to (obviously) suit my needs, I discovered this small instance filling up nearly 1,8 TB of storage in my S3-bucket: Fortunately, I am actively tracking my monthly bills  of my Wasabi-account but considering that, not long ago, a whole TB was enough for some of my Fediverse-based services and some backups in separate buckets, I was forced to get to the bottom of this case and found the Mastodon-based cached media assets to be the root of this evil.</p>
+
+<p><img src="../images/mastodon_retention_settings.jpg" alt="Mastodon’s retention policies" /></p>
+
+<h2 id="mastodons-materials-on-board">Mastodon’s materials on board</h2>
+
+<p>Fortunately, Mastodon’s backend is indeed some kind of beast so the <a href="https://docs.joinmastodon.org/admin/tootctl/">built-in CLI</a> gives you the availability to clean attachments and previews from remote accounts, purging the precious disk cache.  Despite Mastodon having tons of options, you may rarely use them on a daily basis so I did finally spend some time to get used to the single commands. Afterwards, combining and scheduling them on a cron-basis may help you to save valuable disk space, no matter where your data is stored.</p>
+
+<p><img src="../images/mastodon_s3_utilization_before.jpg" alt="Mastodon’s space utilization in its S3-bucket" /></p>
+
+<h2 id="the-script">The script</h2>
+
+<p>Six single commands are the road to our success of re-gaining storage space for our Mastodon-instance. Being the „mastodon“-user on my system and assuming you use the same user and the same paths according to Mastodon’s official guide for deploying your own server, I decided to create an empty file via</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /home/mastodon/mastodon-cleanup.sh
+</code></pre></div></div>
+
+<p>and filled it with the combination of six commands and the specific explanations aiming at a retention of fourteen days which should, in my case, serve well - feel free to alter these parameters according to your personal needs:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Prune remote accounts that never interacted with any local user</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl accounts prune<span class="p">;</span>
+
+<span class="c"># Remove remote statuses that local users never interacted with older than 14 days</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl statuses remove <span class="nt">--days</span> 14<span class="p">;</span>
+
+<span class="c"># Remove media attachments older than 14 days</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl media remove <span class="nt">--days</span> 14<span class="p">;</span>
+
+<span class="c"># Remove all headers (including people you follow)</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl media remove <span class="nt">--remove-headers</span> <span class="nt">--include-follows</span> <span class="nt">--days</span> 0<span class="p">;</span>
+
+<span class="c"># Remove link previews older than 14 days</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl preview_cards remove <span class="nt">--days</span> 14<span class="p">;</span>
+
+<span class="c"># Remove files not linked to any post</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl media remove-orphans<span class="p">;</span>
+</code></pre></div></div>
+
+<p>Now make the script executable.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x /home/mastodon/mastodon-cleanup.sh
+</code></pre></div></div>
+
+<p>If you’ve never run these commands before (just as I did) I’d suggest you start with initially running them one by one as they might take several hours or days to run for the first time. The size of the cached media and database will depend on how many people you follow (approximately 100 in my case), how many users are on your specific instance or how many relays you have added to your instance - just to name some aspects. With Mastodon being a federated Social Network, there are many pros but also cons as each server is talking to other ones, gathering lots of data - which lead us to the dilemma of a quite impressive disk space consumption even with a very small instance.</p>
+
+<h2 id="scheduling-time">Scheduling time</h2>
+
+<p>After we have initially deployed each of the six single commands and freed up the first batch of space, it is sure that we don’t want to do this manually each time. Fortunately, Linux Cron-daemon is our Swiss Army knife for scheduling and with just a single line of code, our script will run at specific times.</p>
+
+<p>So, as logged in „mastodon“-user, just deploy a</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab -e
+</code></pre></div></div>
+
+<p>to enter this user’s cron-settings. Now just add another line at the end of the file matching your needs when this script should run. After the first run, it won’t take that much time anymore so I decided that I am fine with running it every six hours.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 */6 * * * /bin/bash /home/mastodon/mastodon-cleanup.sh
+</code></pre></div></div>
+
+<p>If you aren’t familiar with the syntax of Cron, I recommend to use the <a href="https://crontab-generator.org">Crontab Generator</a> which is always a good way to to check whether your job is correct or not - or even create the whole command you may insert into the crontab instantly for you!</p>
+
+<p><img src="../images/mastodon_cleanup_crontab_settings.jpg" alt="The crontab-settings" /></p>
+
+<p>Save the file and from this moment on, cron will take care of executing the script every six hours!</p>
+
+<h2 id="verdict">Verdict</h2>
+
+<p>With this small tutorial, we managed to implement a great mechanism of automatically getting rid of cached and material and media on our own Mastodon-instance. This is by far the best-practice for every instance and yes, every file may be download and cached again once we interact with the specific status or message connected to it - therefore this solution is more an approach for smaller instances instead of larger ones but, as always, tastes (and demands) are different.</p>
+
+<p><img src="../images/lia-trevarthen-gWvdUpNQr6g-unsplash.jpg" alt="Dealing with storage boxes" /></p>
+
+<p>According to your type of storage you may see the result quite fast or - in my case - on the next day as Wasabi’s statistics need their time to refresh the bucket size. With local storage, the result should be imminent, for me it took its time but the used space decreased drastically and ended up with Mastodon taking less than only 20 GB afterwards! Especially in terms of Wasabi and even despite the fact that the space is freed up immediately, you even pay for deleted storage for 90 days in advance here - in my case a good compromise to prevent the egress-charges from other S3-providers but this is yet another topic!</p>
+
+<p>Anyway, putting all provider-specific considerations aside, this script should help you to control the amount of cached media on your Mastodon-server. Feel free to adopt the script to match your specific needs and do a spring cleaning on your Mastodon-instance - I hope that you somehow consider this post as some kind of useful!</p>
+
+<p class="note">Did you enjoy this post? Share it with a friend!</p>
+
+<p class="tip">Follow me on <a href="https://metalized.net/@oliver">Mastodon</a>. All my other links are available on <a href="https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5">Keyoxide</a>!</p>
+
+<p class="important">If you’d like to say hi, my contact information is <a href="https://me.pifferi.io">here</a>!</p>
+
+<p class="warning">If this post resonated with you, leave a comment in any way!</p>
+
+        </div>
+      </article>
+
+      <div class="share">
+  <div class="share__title">Share this:</div>
+  <ul class="share__list list-reset">
+    <li class="share__item">
+      <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://thebinaryjournal.com/spring-cleaning-tidying-up-your-mastodon-instance&amp;media=https://thebinaryjournal.com/images/mastodon_hero.jpg&amp;description=Spring%20Cleaning%20-%20Tidying%20up%20your%20Mastodon-instance"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest"
+      rel="nofollow"><i class="fa-brands fa-pinterest"></i></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://thebinaryjournal.com/spring-cleaning-tidying-up-your-mastodon-instance&title=Spring%20Cleaning%20-%20Tidying%20up%20your%20Mastodon-instance&summary=&source="
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+    </li>
+  </ul>
+</div>
+      <div class="post__navigation">
+  
+  <div class="post__prev">
+    
+    <a href="/my-default-apps-starting-2024" class="prev__image">
+      
+      <img class="lazy" data-src="/images/karine-avetisyan-ipuiM-36tAg-unsplash.jpg" alt="Spring Cleaning - Tidying up your Mastodon-instance">
+    </a>
+    
+    <div class="prev__box">
+      <span class="post__nav__prev">Older post</span>
+      <h2 class="post__nav__title"><a href="/my-default-apps-starting-2024">My default apps starting 2024</a></h2>
+    </div>
+  </div>
+  
+
+  
+  <div class="post__next">
+    <div class="next__box">
+      <span class="post__nav__next">Newer post</span>
+      <h2 class="post__nav__title"><a href="/how-to-delete-stored-credentials-from-a-yubikey">How to delete stored credentials from a YubiKey</a></h2>
+    </div>
+    
+    <a href="/how-to-delete-stored-credentials-from-a-yubikey" class="next__image">
+      
+      <img class="lazy" data-src="/images/andy-kennedy-FO4CR0MnY_k-unsplash.jpg" alt="Spring Cleaning - Tidying up your Mastodon-instance">
+    </a>
+    
+  </div>
+  
+</div>
+      
+      
+
+
+
+
+
+<div class="related-posts is-related">
+  <div class="section__info">
+    <div class="section__head">
+      <h2 class="section__title">Related</h2>
+    </div>
+  </div>
+  <div class="view-list">
+
+  
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/how-to-upgrade-debian11-bullseye-to-debian-12-bookworm">
+        <img class="lazy" data-src="/images/debian12.jpg" alt="How to upgrade Debian 11 Bullseye to Debian 12 Bookworm">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=linux"
+          class="article__tag" style="background: var(--dark-gray);">
+          Linux
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/how-to-upgrade-debian11-bullseye-to-debian-12-bookworm">How to upgrade Debian 11 Bullseye to Debian 12 Bookworm</a>
+      </h2>
+
+      <p class="article__excerpt">Yesterday, the latest iteration of Debian Linux in version 12, codename „Bookworm“ was released. Everyone of you thinking that a direct upgrade to the new sy...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2023-06-11T00:00:00+02:00">11 Jun, 2023</time>
+        <div class="article__minutes">
+          
+          
+            5 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/how-to-install-php-82-on-debian-11">
+        <img class="lazy" data-src="/images/debian_with_php.jpg" alt="How to install PHP 8.2 on Debian 11">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=linux"
+          class="article__tag" style="background: var(--dark-gray);">
+          Linux
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/how-to-install-php-82-on-debian-11">How to install PHP 8.2 on Debian 11</a>
+      </h2>
+
+      <p class="article__excerpt">Although Debian is a modern Linux-distribution based upon stability, it sometimes misses actual packages like the latest PHP-iteration.
+
+Debian 11, released ...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2022-12-28T00:00:00+01:00">28 Dec, 2022</time>
+        <div class="article__minutes">
+          
+          
+            3 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/vaultwarden-your-guide-to-your-self-hosted-bitwarden-password-vault">
+        <img class="lazy" data-src="/images/Bitwarden_Intro.png" alt="Vaultwarden: Your guide to your self-hosted Bitwarden password vault">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=linux"
+          class="article__tag" style="background: var(--dark-gray);">
+          Linux
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/vaultwarden-your-guide-to-your-self-hosted-bitwarden-password-vault">Vaultwarden: Your guide to your self-hosted Bitwarden password vault</a>
+      </h2>
+
+      <p class="article__excerpt">Even a day after the SaferInternetDay, managing the challenging riddle to choose a specific password manager is still a tricky task, especially if you also w...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2022-02-09T00:00:00+01:00">09 Feb, 2022</time>
+        <div class="article__minutes">
+          
+          
+            10 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+          
+  </div>
+</div>
+    </div>
+
+    <div class="col col-4 col-d-12">
+      <aside class="sidebar">
+        
+        
+<div class="widget widget-social">
+  <ul class="widget-social__list list-reset">
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+        aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+        aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+        aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="/feed.xml" target="_blank" rel="noopener"
+        aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+
+
+
+        
+<div class="widget widget-tags">
+  <div class="widget-sidebar-head">
+    <h2 class="widget-sidebar-title">Topics</h2>
+  </div>
+
+  <div class="tag-cloud">
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=history"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        History
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=internet"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Internet
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=apple"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Apple
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=security"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Security
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=thoughts"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Thoughts
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=linux"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Linux
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=music"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Music
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=software"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Software
+      </a>
+    
+  </div>
+</div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- end post -->
+    </main>
+    <!-- end content -->
+
+    <!-- begin footer -->
+<footer class="footer">
+
+  <div class="footer__inner">
+    <div class="container">
+      <div class="row">
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__info__title">The Binary Journal</h3>
+          
+          <p class="footer__info__description">Here, I share my thoughts, news and tutorials while keeping control over my digital world and my own mind in real life. Dive in, get inspired and feel free to join me on this digital and analog trip!</p>
+          
+          
+          <div class="footer__social">
+            <ul class="footer__social__list list-reset">
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+                  aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+                  aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+                  aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="/feed.xml" target="_blank" rel="noopener"
+                  aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__title">Recent Posts</h3>
+          <div class="footer__recent-posts">
+            
+            <div class="footer__recent-content">
+              
+              <a href="/digital-independence-day-march" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/digital_independence_day.jpg" alt="The third Digital Independence Day in 2026">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/digital-independence-day-march">The third Digital Independence Day in 2026</a></h3>
+                <time class="footer__recent-date" datetime="2026-03-01T00:00:00+01:00">01 Mar, 2026</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/andrew-neel-hZkOZGtlA5w-unsplash.jpg" alt="How to skip the ChatGPT for Mac waiting list and get access now">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now">How to skip the ChatGPT for Mac waiting list and get access now</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-26T00:00:00+02:00">26 May, 2024</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/vmware-kills-players-makes-pro-free-for-personal-use" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/fusion-ws-heroes-1.jpg" alt="VMware kills Players, makes Pro free for personal use">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/vmware-kills-players-makes-pro-free-for-personal-use">VMware kills Players, makes Pro free for personal use</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-14T00:00:00+02:00">14 May, 2024</time>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+        <div class="col col-2 col-d-6 col-m-12">
+          <div class="footer-nav__left">
+            <h3 class="footer__title">Menu</h3>
+            <div class="footer-nav__list">
+            
+            
+              <a class="footer-nav__link" href="/">Home</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/archive/">Archive</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/contact/">Contact</a>
+            
+            
+            </div>
+          </div>
+        </div>
+        
+
+        
+        
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="copyright">2026 &copy; <a href="/">The Binary Journal</a>. General pictures - unless stated otherwise - gratefully taken from the wonderful <a href="https://unsplash.com">unsplash.com.</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- end footer -->
+  </div>
+  <!-- end global wrap -->
+
+  <div class="top" title="Top"><i class="fa-solid fa-arrow-up"></i></div>
+
+  <div class="images-overlay"></div>
+
+  <script src="/js/scripts.js"></script>
+  <script src="/js/common.js"></script>
+</body>
+
+</html>
