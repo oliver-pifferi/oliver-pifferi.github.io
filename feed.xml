@@ -3,10 +3,10 @@
     <channel>
         <title>The Binary Journal</title>
         <description>Beyond the Algorithm - Stories of a Digital Soul</description>
-        <link>http://localhost:4000/</link>
-        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 15 Mar 2026 13:27:29 +0100</pubDate>
-        <lastBuildDate>Sun, 15 Mar 2026 13:27:29 +0100</lastBuildDate>
+        <link>https://thebinaryjournal.com/</link>
+        <atom:link href="https://thebinaryjournal.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 15 Mar 2026 13:59:03 +0100</pubDate>
+        <lastBuildDate>Sun, 15 Mar 2026 13:59:03 +0100</lastBuildDate>
         <generator>Jekyll v4.4.1</generator>
         
             <item>
@@ -88,8 +88,8 @@
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sun, 01 Mar 2026 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/Digital-Independence-Day-March</link>
-                <guid isPermaLink="true">http://localhost:4000/Digital-Independence-Day-March</guid>
+                <link>https://thebinaryjournal.com/Digital-Independence-Day-March</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/Digital-Independence-Day-March</guid>
                 
                 <category>Internet</category>
                 
@@ -139,8 +139,8 @@
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sun, 26 May 2024 00:00:00 +0200</pubDate>
-                <link>http://localhost:4000/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now</link>
-                <guid isPermaLink="true">http://localhost:4000/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now</guid>
+                <link>https://thebinaryjournal.com/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now</guid>
                 
                 <category>Apple</category>
                 
@@ -200,8 +200,8 @@
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Tue, 14 May 2024 00:00:00 +0200</pubDate>
-                <link>http://localhost:4000/vmware-kills-players-makes-pro-free-for-personal-use</link>
-                <guid isPermaLink="true">http://localhost:4000/vmware-kills-players-makes-pro-free-for-personal-use</guid>
+                <link>https://thebinaryjournal.com/vmware-kills-players-makes-pro-free-for-personal-use</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/vmware-kills-players-makes-pro-free-for-personal-use</guid>
                 
                 <category>Software</category>
                 
@@ -243,8 +243,8 @@
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sat, 04 May 2024 00:00:00 +0200</pubDate>
-                <link>http://localhost:4000/tusks-make-posting-to-mastodon-feel-like-posting-to-a-blog</link>
-                <guid isPermaLink="true">http://localhost:4000/tusks-make-posting-to-mastodon-feel-like-posting-to-a-blog</guid>
+                <link>https://thebinaryjournal.com/tusks-make-posting-to-mastodon-feel-like-posting-to-a-blog</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/tusks-make-posting-to-mastodon-feel-like-posting-to-a-blog</guid>
                 
                 <category>Software</category>
                 
@@ -307,8 +307,8 @@
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sat, 27 Apr 2024 00:00:00 +0200</pubDate>
-                <link>http://localhost:4000/apple-locks-users-out-of-their-apple-ids-without-explanation</link>
-                <guid isPermaLink="true">http://localhost:4000/apple-locks-users-out-of-their-apple-ids-without-explanation</guid>
+                <link>https://thebinaryjournal.com/apple-locks-users-out-of-their-apple-ids-without-explanation</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/apple-locks-users-out-of-their-apple-ids-without-explanation</guid>
                 
                 <category>Apple</category>
                 
@@ -398,8 +398,8 @@
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sun, 17 Mar 2024 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/how-to-delete-stored-credentials-from-a-yubikey</link>
-                <guid isPermaLink="true">http://localhost:4000/how-to-delete-stored-credentials-from-a-yubikey</guid>
+                <link>https://thebinaryjournal.com/how-to-delete-stored-credentials-from-a-yubikey</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/how-to-delete-stored-credentials-from-a-yubikey</guid>
                 
                 <category>Security</category>
                 
@@ -496,8 +496,8 @@ RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sun, 25 Feb 2024 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/Spring-Cleaning-Tidying-up-your-Mastodon-instance</link>
-                <guid isPermaLink="true">http://localhost:4000/Spring-Cleaning-Tidying-up-your-Mastodon-instance</guid>
+                <link>https://thebinaryjournal.com/Spring-Cleaning-Tidying-up-your-Mastodon-instance</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/Spring-Cleaning-Tidying-up-your-Mastodon-instance</guid>
                 
                 <category>Linux</category>
                 
@@ -550,8 +550,8 @@ RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Mon, 08 Jan 2024 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/My-default-apps-starting-2024</link>
-                <guid isPermaLink="true">http://localhost:4000/My-default-apps-starting-2024</guid>
+                <link>https://thebinaryjournal.com/My-default-apps-starting-2024</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/My-default-apps-starting-2024</guid>
                 
                 <category>Software</category>
                 
@@ -595,8 +595,8 @@ RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sun, 24 Dec 2023 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/season-greetings-and-goodbye-forever-2023</link>
-                <guid isPermaLink="true">http://localhost:4000/season-greetings-and-goodbye-forever-2023</guid>
+                <link>https://thebinaryjournal.com/season-greetings-and-goodbye-forever-2023</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/season-greetings-and-goodbye-forever-2023</guid>
                 
                 <category>Thoughts</category>
                 
@@ -682,8 +682,8 @@ RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
 &lt;p class=&quot;warning&quot;&gt;If this post resonated with you, leave a comment in any way!&lt;/p&gt;
 </description>
                 <pubDate>Sat, 04 Nov 2023 00:00:00 +0100</pubDate>
-                <link>http://localhost:4000/is-bluesky-worth-a-visit</link>
-                <guid isPermaLink="true">http://localhost:4000/is-bluesky-worth-a-visit</guid>
+                <link>https://thebinaryjournal.com/is-bluesky-worth-a-visit</link>
+                <guid isPermaLink="true">https://thebinaryjournal.com/is-bluesky-worth-a-visit</guid>
                 
                 <category>Internet</category>
                 
