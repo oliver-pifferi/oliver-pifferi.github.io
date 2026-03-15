@@ -1,2 +1,2 @@
-# oliver-pifferigithub.io
+# oliver-pifferi.github.io
 My personal blog.
