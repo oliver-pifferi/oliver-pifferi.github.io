@@ -239,7 +239,7 @@
 
 <p>To configure our UFW on the freshly-installed machine, use the following commands according to the needed TCP/UDP-ports for Nextcloud AIO. First, UFW is installed, then the different ports are being opened while the last command enables UFW at boot time.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install ufw -y
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install ufw -y
 sudo ufw allow http
 sudo ufw allow https
 sudo ufw allow ssh
@@ -257,7 +257,7 @@ ufw enable
 
 <p>On the machine, there is a specific user we work with as running containers (or doing anything else) with the root-user often is not the best idea. So head over to your system, log in with the desired user and install the Docker-engine first as this is the minimum prerequisite to get everything running:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -fsSL get.docker.com | sudo sh
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -fsSL get.docker.com | sudo sh
 
 </code></pre></div></div>
 
@@ -265,32 +265,32 @@ ufw enable
 
 <p>To achieve sudo-permissions for our service-user which is, for example, named „nextcloud-svc“, enter the following commands:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adduser nextcloud-svc
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adduser nextcloud-svc
 usermod -aG sudo nextcloud-svc
 
 </code></pre></div></div>
 
 <p>Then switch to the specific user by typing:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su - nextcloud-svc
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su - nextcloud-svc
 
 </code></pre></div></div>
 
 <p>and secure your docker service which is finally done installing the desired additional package by the command</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install -y uidmap
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install -y uidmap
 
 </code></pre></div></div>
 
 <p>followed by</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dockerd-rootless-setuptool.sh install
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dockerd-rootless-setuptool.sh install
 
 </code></pre></div></div>
 
 <p>and exporting the named environment variables</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export XDG_RUNTIME_DIR=/home/nextcloud-svc/.docker/run
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export XDG_RUNTIME_DIR=/home/nextcloud-svc/.docker/run
 export PATH=/usr/bin:$PATH
 export DOCKER_HOST=unix:///home/nextcloud-svc/.docker/run/docker.sock
 
@@ -300,20 +300,20 @@ export DOCKER_HOST=unix:///home/nextcloud-svc/.docker/run/docker.sock
 
 <p>People who prefer to go with the standard-Docker-packages delivered by Ubuntu’s standard repository just need to enter</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install docker.io
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install docker.io
 </code></pre></div></div>
 
 <p>instead, installing all necessary packages this way - the choice is yours!</p>
 
 <p>After taking care of those prerequisites, let’s finally pull the latest Nextcloud AIO-base image from the <a href="https://hub.docker.com/r/nextcloud/all-in-one">official Docker-repository</a> which may take a short amount of time, depending upon your Internet connection:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker pull nextcloud/all-in-one:latest
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker pull nextcloud/all-in-one:latest
 
 </code></pre></div></div>
 
 <p>To fire the basic container up and start everything for the very first time, use the command</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># For x64 CPUs:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># For x64 CPUs:
 sudo docker run -it \
 --name nextcloud-aio-mastercontainer \
 --restart always \
@@ -331,7 +331,7 @@ nextcloud/all-in-one:latest
 
 <p>After the containers are up and running, we may now head to our preferred browser and enter the fully-qualified domain name of the server as a https-string followed by port 8080, for example while ignoring the possible certificate error yet:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cloud.my-domain.tld:8080
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cloud.my-domain.tld:8080
 
 </code></pre></div></div>
 
@@ -371,7 +371,7 @@ nextcloud/all-in-one:latest
 
 <p>After doing that much work in the background, you may now head to your Nextcloud AIO’s final URL which listens at Port 443, so venturing to</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cloud.my-domain.tld
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cloud.my-domain.tld
 
 </code></pre></div></div>
 
@@ -379,7 +379,7 @@ nextcloud/all-in-one:latest
 
 <p>All checks within your Nextcloud should be okay despite of the warning regarding the „mission default phone region“. As you cannot alter Nextcloud’s config directly like you would in a non-Docker-based installation, firing the command</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker exec -it nextcloud-aio-nextcloud php occ config:system:set default_phone_region --value="yourvalue"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker exec -it nextcloud-aio-nextcloud php occ config:system:set default_phone_region --value="yourvalue"
 
 </code></pre></div></div>
 
@@ -389,7 +389,7 @@ nextcloud/all-in-one:latest
 
 <p>Generally, you may always use</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker exec -it nextcloud-aio-nextcloud php occ your-command
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker exec -it nextcloud-aio-nextcloud php occ your-command
 
 </code></pre></div></div>
 

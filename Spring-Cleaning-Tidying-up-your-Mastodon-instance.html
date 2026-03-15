@@ -239,35 +239,35 @@
 
 <p>Six single commands are the road to our success of re-gaining storage space for our Mastodon-instance. Being the „mastodon“-user on my system and assuming you use the same user and the same paths according to Mastodon’s official guide for deploying your own server, I decided to create an empty file via</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /home/mastodon/mastodon-cleanup.sh
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /home/mastodon/mastodon-cleanup.sh
 </code></pre></div></div>
 
 <p>and filled it with the combination of six commands and the specific explanations aiming at a retention of fourteen days which should, in my case, serve well - feel free to alter these parameters according to your personal needs:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 
-# Prune remote accounts that never interacted with any local user
-RAILS_ENV=production /home/mastodon/live/bin/tootctl accounts prune;
+<span class="c"># Prune remote accounts that never interacted with any local user</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl accounts prune<span class="p">;</span>
 
-# Remove remote statuses that local users never interacted with older than 14 days
-RAILS_ENV=production /home/mastodon/live/bin/tootctl statuses remove --days 14;
+<span class="c"># Remove remote statuses that local users never interacted with older than 14 days</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl statuses remove <span class="nt">--days</span> 14<span class="p">;</span>
 
-# Remove media attachments older than 14 days
-RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove --days 14;
+<span class="c"># Remove media attachments older than 14 days</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl media remove <span class="nt">--days</span> 14<span class="p">;</span>
 
-# Remove all headers (including people you follow)
-RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove --remove-headers --include-follows --days 0;
+<span class="c"># Remove all headers (including people you follow)</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl media remove <span class="nt">--remove-headers</span> <span class="nt">--include-follows</span> <span class="nt">--days</span> 0<span class="p">;</span>
 
-# Remove link previews older than 14 days
-RAILS_ENV=production /home/mastodon/live/bin/tootctl preview_cards remove --days 14;
+<span class="c"># Remove link previews older than 14 days</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl preview_cards remove <span class="nt">--days</span> 14<span class="p">;</span>
 
-# Remove files not linked to any post
-RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
+<span class="c"># Remove files not linked to any post</span>
+<span class="nv">RAILS_ENV</span><span class="o">=</span>production /home/mastodon/live/bin/tootctl media remove-orphans<span class="p">;</span>
 </code></pre></div></div>
 
 <p>Now make the script executable.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x /home/mastodon/mastodon-cleanup.sh
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x /home/mastodon/mastodon-cleanup.sh
 </code></pre></div></div>
 
 <p>If you’ve never run these commands before (just as I did) I’d suggest you start with initially running them one by one as they might take several hours or days to run for the first time. The size of the cached media and database will depend on how many people you follow (approximately 100 in my case), how many users are on your specific instance or how many relays you have added to your instance - just to name some aspects. With Mastodon being a federated Social Network, there are many pros but also cons as each server is talking to other ones, gathering lots of data - which lead us to the dilemma of a quite impressive disk space consumption even with a very small instance.</p>
@@ -278,12 +278,12 @@ RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
 
 <p>So, as logged in „mastodon“-user, just deploy a</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab -e
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crontab -e
 </code></pre></div></div>
 
 <p>to enter this user’s cron-settings. Now just add another line at the end of the file matching your needs when this script should run. After the first run, it won’t take that much time anymore so I decided that I am fine with running it every six hours.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 */6 * * * /bin/bash /home/mastodon/mastodon-cleanup.sh
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 */6 * * * /bin/bash /home/mastodon/mastodon-cleanup.sh
 </code></pre></div></div>
 
 <p>If you aren’t familiar with the syntax of Cron, I recommend to use the <a href="https://crontab-generator.org">Crontab Generator</a> which is always a good way to to check whether your job is correct or not - or even create the whole command you may insert into the crontab instantly for you!</p>
@@ -702,7 +702,7 @@ Debian 11, released ...</p>
         <div class="article__minutes">
           
           
-            11 min read
+            10 min read
           
         </div>
       </div>

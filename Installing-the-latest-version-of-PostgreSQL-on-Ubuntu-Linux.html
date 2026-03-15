@@ -257,12 +257,12 @@
 
 <p>First of all, we need to create the file repository’s configuration by typing</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" &gt; /etc/apt/sources.list.d/pgdg.list'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" &gt; /etc/apt/sources.list.d/pgdg.list'
 </code></pre></div></div>
 
 <p>and importing the repository signing key afterwards:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 </code></pre></div></div>
 
 <p><img src="../images/0-jIDnAj36B1SpN4od.jpg" alt="" /></p>
@@ -271,17 +271,17 @@
 
 <p>Now update the package list just like you would do with any Ubuntu-/Debian-based distro:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
 </code></pre></div></div>
 
 <p>Then you need to choose whether to go with the latest version of PostgreSQL or choose a desired version, a command like</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install postgresql postgresql-contrib
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install postgresql postgresql-contrib
 </code></pre></div></div>
 
 <p>for example will install version 14 at the time of writing and the contributing packages while</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install postgresql-12
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install postgresql-12
 </code></pre></div></div>
 
 <p>will install version 12 in case you specifically need this iteration of PostgreSQL.</p>

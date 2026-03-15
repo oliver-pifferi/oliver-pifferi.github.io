@@ -235,43 +235,43 @@
 
 <p>On our Debian system, be sure that the „curl“ package is installed. If not, a</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install curl
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install curl
 </code></pre></div></div>
 
 <p>does the trick before the command</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
 </code></pre></div></div>
 
 <p>will install the basic repository. On Ubuntu-systems, a</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 </code></pre></div></div>
 
 <p>takes care of the same effect.</p>
 
 <p>To update all repositories and update some components, do a</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update &amp;&amp; sudo apt upgrade
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update &amp;&amp; sudo apt upgrade
 </code></pre></div></div>
 
 <p>to ensure your system is ready for all further installation tasks.</p>
 
 <p>After having met all prerequisites, it’s now time to finally get familiar with PHP 8.2. To install the basic module, use the command</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install php8.2-fpm
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install php8.2-fpm
 </code></pre></div></div>
 
 <p>and, after conforming your choose, the FPM-version of PHP will be installed. To check whether you did succeed or not, a</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php -v
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php -v
 </code></pre></div></div>
 
 <p>is always a good choice.</p>
 
 <p>Further modules can be additionally installed depending upon your needs, for example the GD- and Curl-modules can be added via</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install php8.2-gd php8.2-curl 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install php8.2-gd php8.2-curl 
 </code></pre></div></div>
 
 <p>in no time!</p>
@@ -678,7 +678,7 @@
         <div class="article__minutes">
           
           
-            11 min read
+            10 min read
           
         </div>
       </div>

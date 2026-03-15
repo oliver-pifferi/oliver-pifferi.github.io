@@ -5,9 +5,9 @@
         <description>Beyond the Algorithm - Stories of a Digital Soul</description>
         <link>https://thebinaryjournal.com/</link>
         <atom:link href="https://thebinaryjournal.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 15 Mar 2026 13:59:03 +0100</pubDate>
-        <lastBuildDate>Sun, 15 Mar 2026 13:59:03 +0100</lastBuildDate>
-        <generator>Jekyll v4.4.1</generator>
+        <pubDate>Sun, 15 Mar 2026 14:18:03 +0100</pubDate>
+        <lastBuildDate>Sun, 15 Mar 2026 14:18:03 +0100</lastBuildDate>
+        <generator>Jekyll v4.0.1</generator>
         
             <item>
                 <title>The third Digital Independence Day in 2026</title>
@@ -333,12 +333,12 @@
 
 &lt;p&gt;Installing &lt;a href=&quot;https://brew.sh&quot;&gt;Homebrew&lt;/a&gt; is pretty straightforward but yet another topic so assuming you have already done so by either typing&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;or using the new and official .PKG-installation for Macs hosted on &lt;a href=&quot;https://github.com/Homebrew/brew/releases/latest&quot;&gt;GitHub&lt;/a&gt;, a simple&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install ykman
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install ykman
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;should do the trick and, after some packages were fetched, we’re finally ready to go on macOS.&lt;/p&gt;
@@ -353,7 +353,7 @@
 
 &lt;p&gt;To see which credentials are stored, just enter a&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials list
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;followed by your personal PIN (which should be set, otherwise using a hardware security key is quite pointless).&lt;/p&gt;
@@ -364,19 +364,19 @@
 
 &lt;p&gt;To delete a specific service, simply use the following command followed by the specific credential ID:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials delete [credential id]
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials delete [credential id]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;For example, for removing my apple.com-account from my YubiKey (always two there are!), the appropriate command would be&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials delete d60f8b33
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials delete d60f8b33
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;and it would be just the first entry with credential ID d60f8b33 that would be deleted from the YubiKey’s storage!&lt;/p&gt;
 
 &lt;p&gt;To check whether the credentials have been removed or not (believe me, they should!), another&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials list
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ykman fido credentials list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;will show the remaining credentials.&lt;/p&gt;
@@ -424,35 +424,35 @@
 
 &lt;p&gt;Six single commands are the road to our success of re-gaining storage space for our Mastodon-instance. Being the „mastodon“-user on my system and assuming you use the same user and the same paths according to Mastodon’s official guide for deploying your own server, I decided to create an empty file via&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vi /home/mastodon/mastodon-cleanup.sh
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vi /home/mastodon/mastodon-cleanup.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;and filled it with the combination of six commands and the specific explanations aiming at a retention of fourteen days which should, in my case, serve well - feel free to alter these parameters according to your personal needs:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/bash
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 
-# Prune remote accounts that never interacted with any local user
-RAILS_ENV=production /home/mastodon/live/bin/tootctl accounts prune;
+&lt;span class=&quot;c&quot;&gt;# Prune remote accounts that never interacted with any local user&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;production /home/mastodon/live/bin/tootctl accounts prune&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-# Remove remote statuses that local users never interacted with older than 14 days
-RAILS_ENV=production /home/mastodon/live/bin/tootctl statuses remove --days 14;
+&lt;span class=&quot;c&quot;&gt;# Remove remote statuses that local users never interacted with older than 14 days&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;production /home/mastodon/live/bin/tootctl statuses remove &lt;span class=&quot;nt&quot;&gt;--days&lt;/span&gt; 14&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-# Remove media attachments older than 14 days
-RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove --days 14;
+&lt;span class=&quot;c&quot;&gt;# Remove media attachments older than 14 days&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;production /home/mastodon/live/bin/tootctl media remove &lt;span class=&quot;nt&quot;&gt;--days&lt;/span&gt; 14&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-# Remove all headers (including people you follow)
-RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove --remove-headers --include-follows --days 0;
+&lt;span class=&quot;c&quot;&gt;# Remove all headers (including people you follow)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;production /home/mastodon/live/bin/tootctl media remove &lt;span class=&quot;nt&quot;&gt;--remove-headers&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--include-follows&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--days&lt;/span&gt; 0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-# Remove link previews older than 14 days
-RAILS_ENV=production /home/mastodon/live/bin/tootctl preview_cards remove --days 14;
+&lt;span class=&quot;c&quot;&gt;# Remove link previews older than 14 days&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;production /home/mastodon/live/bin/tootctl preview_cards remove &lt;span class=&quot;nt&quot;&gt;--days&lt;/span&gt; 14&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-# Remove files not linked to any post
-RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
+&lt;span class=&quot;c&quot;&gt;# Remove files not linked to any post&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;production /home/mastodon/live/bin/tootctl media remove-orphans&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now make the script executable.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x /home/mastodon/mastodon-cleanup.sh
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x /home/mastodon/mastodon-cleanup.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you’ve never run these commands before (just as I did) I’d suggest you start with initially running them one by one as they might take several hours or days to run for the first time. The size of the cached media and database will depend on how many people you follow (approximately 100 in my case), how many users are on your specific instance or how many relays you have added to your instance - just to name some aspects. With Mastodon being a federated Social Network, there are many pros but also cons as each server is talking to other ones, gathering lots of data - which lead us to the dilemma of a quite impressive disk space consumption even with a very small instance.&lt;/p&gt;
@@ -463,12 +463,12 @@ RAILS_ENV=production /home/mastodon/live/bin/tootctl media remove-orphans;
 
 &lt;p&gt;So, as logged in „mastodon“-user, just deploy a&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;to enter this user’s cron-settings. Now just add another line at the end of the file matching your needs when this script should run. After the first run, it won’t take that much time anymore so I decided that I am fine with running it every six hours.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 */6 * * * /bin/bash /home/mastodon/mastodon-cleanup.sh
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 */6 * * * /bin/bash /home/mastodon/mastodon-cleanup.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you aren’t familiar with the syntax of Cron, I recommend to use the &lt;a href=&quot;https://crontab-generator.org&quot;&gt;Crontab Generator&lt;/a&gt; which is always a good way to to check whether your job is correct or not - or even create the whole command you may insert into the crontab instantly for you!&lt;/p&gt;

@@ -235,37 +235,37 @@
 
 <p>Therefore, and first of all, we need to create the basic file repository configuration:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" &gt; /etc/apt/sources.list.d/pgdg.list'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" &gt; /etc/apt/sources.list.d/pgdg.list'
 
 </code></pre></div></div>
 
 <p>Then we need to import the signing key:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
 </code></pre></div></div>
 
 <p>After accomplishing both steps, the new repositories are known to our Linux-installations and can be updated following the usual procedure:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
 
 </code></pre></div></div>
 
 <p>After the repositories are up-to-date, we can install the binaries. If you don’t want the latest version, use „postgresql-13“ or similar instead of „postgresql“ in the following command:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install postgresql postgresql-contrib
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install postgresql postgresql-contrib
 
 </code></pre></div></div>
 
 <p>As I am running PHP-FPM 8.0 on my Ubuntu-system and we need also PHP to collaborate with PostgreSQL, the official PHP-module should also be installed by typing</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install php8.0-pgsql
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install php8.0-pgsql
 
 </code></pre></div></div>
 
 <p>followed by the restart of the PHP-FPM process:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl restart php8.0-fpm
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl restart php8.0-fpm
 
 </code></pre></div></div>
 
@@ -275,13 +275,13 @@
 
 <p>After the binaries have been installed, enter PostgreSQL by typing</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u postgres psql
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u postgres psql
 
 </code></pre></div></div>
 
 <p>and you should be welcomed with PostgreSQL’s shell:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psql (14.1 (Ubuntu 14.1-1.pgdg20.04+1))
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psql (14.1 (Ubuntu 14.1-1.pgdg20.04+1))
 Type "help" for help.
 
 postgres=# 
@@ -290,26 +290,26 @@ postgres=#
 
 <p>The command</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\conninfo
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\conninfo
 
 </code></pre></div></div>
 
 <p>will show you some connection information about the database</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>postgres=# \conninfo
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>postgres=# \conninfo
 You are connected to database "postgres" as user "postgres" via socket in "/var/run/postgresql" at port "5432"
 
 </code></pre></div></div>
 
 <p>while a simple</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\q
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\q
 
 </code></pre></div></div>
 
 <p>leads you back into Ubuntu’s shell, leaving the PostgreSQL command line behind - once you want to do this. Everything we need is now up and running so we may stay in PostgreSQL’s shell for now and enter four commands for creating a specific user, creating an empty database, setting the new user to be this database’s owner and - finally - setting the proper user privileges for this database:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE USER nextcloudusr WITH PASSWORD 'your-usr-password';
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE USER nextcloudusr WITH PASSWORD 'your-usr-password';
 CREATE DATABASE nextclouddb TEMPLATE template0 ENCODING 'UNICODE';
 ALTER DATABASE nextclouddb OWNER TO nextcloudusr;
 GRANT ALL PRIVILEGES ON DATABASE nextclouddb TO nextcloudusr;
@@ -319,7 +319,7 @@ GRANT ALL PRIVILEGES ON DATABASE nextclouddb TO nextcloudusr;
 
 <p>In this example, the database-user is „nextcloudusr“ while the database is „nextclouddb“ and the password, here defined as „your-usr-password“ should be changed to suit your personal security needs. Each single command should work well and the final</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\q
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\q
 
 </code></pre></div></div>
 
@@ -329,7 +329,7 @@ GRANT ALL PRIVILEGES ON DATABASE nextclouddb TO nextcloudusr;
 
 <p>According to the size of your Nextcloud-installation, database and system resources, the migration process can take quite a long time to finish. The migration itself is done with Nextcloud’s „occ“-command by typing</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u www-data php8.0 /var/www/nextcloud/occ db:convert-type --all-apps --password "your-usr-password" pgsql nextcloudusr localhost nextclouddb
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u www-data php8.0 /var/www/nextcloud/occ db:convert-type --all-apps --password "your-usr-password" pgsql nextcloudusr localhost nextclouddb
 
 </code></pre></div></div>
 
