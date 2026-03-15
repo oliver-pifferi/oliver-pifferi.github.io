@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Deploying your own Docker-ized Nextcloud Hub II-instance in no time</title>
+  <meta name='description' content='Beyond the Algorithm - Stories of a Digital Soul'>
+
+  <link rel="canonical" href="https://thebinaryjournal.com/deploying-your-own-docker-ized-nextcloud-hub-ii-instance-in-no-time">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Deploying your own Docker-ized Nextcloud Hub II-instance in no time – The Binary Journal">
+  <meta name="twitter:description" content="There are many ways of successfully deploying Nextcloud depending on your knowledge. One new has now just entered the stage, making your way to your own private cloud a lot easier!
+">
+  <meta name="twitter:image:src" content="https://thebinaryjournal.com/images/grouppic2019.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Deploying your own Docker-ized Nextcloud Hub II-instance in no time – The Binary Journal">
+  <meta property="og:description" content="There are many ways of successfully deploying Nextcloud depending on your knowledge. One new has now just entered the stage, making your way to your own private cloud a lot easier!
+">
+  <meta property="og:image" content="https://thebinaryjournal.com/images/grouppic2019.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+  <script>
+    const defaultTheme = "dark";
+    const isToggleEnabled = true;
+    const userTheme = localStorage.getItem("theme");
+
+    function setTheme(mode) {
+      if (mode === "dark") {
+        document.documentElement.setAttribute("dark", "");
+        document.documentElement.classList.add("dark-mode");
+      } else if (mode === "light") {
+        document.documentElement.removeAttribute("dark");
+        document.documentElement.classList.remove("dark-mode");
+      }
+    }
+
+    if (isToggleEnabled) {
+      if (userTheme) {
+        setTheme(userTheme);
+      } else {
+        setTheme(defaultTheme);
+      }
+    } else {
+      setTheme(defaultTheme);
+    }
+
+    if (localStorage.getItem("classView") === "list") {
+      document.documentElement.setAttribute("list", "");
+      document.documentElement.classList.add('view-list');
+    }
+  </script>
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  
+
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+    <!-- begin header -->
+<header class="header">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            The Binary Journal
+          
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <div class="main-nav__box">
+            <ul class="nav__list list-reset">
+              
+              
+              <li class="nav__item">
+                <a href="/" class="nav__link">Home</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/archive/" class="nav__link">Archive</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/contact/" class="nav__link">Contact</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+
+        <div class="nav-button">
+          
+          <div class="color-scheme-button">
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72"/>
+                </svg>
+              </div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                    <path stroke-linecap="round" d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15"/>
+                    <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z"/>
+                    <path stroke-linecap="round" d="M24 45v-3.15"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="search-button">
+            <svg class="search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+            <span class="search-button__text">Search posts...</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- begin search -->
+<div class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search__box">
+          <div class="search__group">
+            <i class="search__close fa-solid fa-xmark"></i>
+            <label for="js-search-input" class="screen-reader-text">Search for Blog</label>
+            <input type="text" id="js-search-input" class="search__text" autocomplete="off"
+              placeholder="Type to search...">
+          </div>
+          <div class="search-results-list view-list" id="js-results-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search__overlay"></div>
+</div>
+<!-- end search -->
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      <!-- begin post -->
+<div class="container">
+
+  <div class="row">
+    <div class="col col-8 col-d-12">
+
+      <div class="post-head">
+
+        
+        
+        <div class="post-image">
+          <img class="lazy" data-src="/images/grouppic2019.jpg" alt="Deploying your own Docker-ized Nextcloud Hub II-instance in no time">
+        </div>
+        
+        
+
+        <div class="post-info">
+          
+          <div class="post-tags">
+            
+            <a href="/tags/?tag=linux" class="post-tag"
+              style="background: var(--dark-gray);">Linux</a>
+            
+          </div>
+          
+
+          <h1 class="post-title">Deploying your own Docker-ized Nextcloud Hub II-instance in no time</h1>
+
+          <div class="post-meta">
+            <a href="/about/" class="post-meta__image">
+              <img class="lazy" data-src="/images/01-1.jpg"
+                alt="Oliver Pifferi">
+            </a>
+
+            <div class="post-meta__content">
+              <a class="post-meta__author" href="/about/">Oliver Pifferi</a>
+              <div class="post-meta__bottom">
+                <time class="post-date" datetime="2022-02-06T00:00:00+01:00">06 Feb, 2022</time> –
+                <span class="post-minutes">
+                  
+                   10 min read  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <article class="post">
+        <div class="post__content">
+          
+
+          <h3 id="there-are-many-ways-of-successfully-deploying-nextcloud-depending-on-your-knowledge-one-new-has-now-just-entered-the-stage-making-your-way-to-your-own-private-cloud-a-lot-easier">There are many ways of successfully deploying <a href="https://nextcloud.com/">Nextcloud</a> depending on your knowledge. One new has now just entered the stage, making your way to your own private cloud a lot easier!</h3>
+
+<p>Since 2016 I have refined my way of installing a Linux-system with Apache, PHP, a database and some other tools as foundation for an own Nextcloud. Over time, many tweaks followed with the experiences I have gained but what with the less-savvy people out there striving for a private cloud? The answer is probably one of the easiest ways to deploy it: New <a href="https://hub.docker.com/r/nextcloud/all-in-one">Nextcloud AIO</a> (All in One) with Nextcloud Hub II comes on based on Docker-technology, is blazing fast and absolute easy to deploy - let me show you how!</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>First of all, you need a server with an updated Linux-system running on it, either in your home or hosted by a provider like <a href="https://www.netcup.eu/">Netcup</a> where also my projects are hosted. As we don’t want to focus on NATing and making your router at home ready for dealing with Nextcloud (which is yet another topic!) we focus on a freshly installed VPS running, for example, Ubuntu or Debian Linux.</p>
+
+<p>Nextcloud AIO features all single components you usually would install one by one and consists of single Docker-containers. Covered are the webserver, the database, Nextcloud itself, a Redis-server for caching, Collabora running the new Nextcloud Office and - finally - a Talk-container for Instant Messaging, Collaboration and Video Communications even with the High Performance Backend enabled! Especially the latter is quite fiddly to implement so the final result will deliver a fully-equipped Nextcloud-instance to the user without the hassle of configuring everything piece by piece. On top there is also a backup-solution based on BorgBackup available as well so you shouldn’t miss anything once you have deployed those containers.</p>
+
+<h2 id="basics">Basics</h2>
+
+<p>We start with an empty VPS which is - in my case - running with Ubuntu 20.04 and all updates installed including the curl- and (here) UFW-packages. The first is mandatory, the latter my one small way of additionally securing the Linux-server floating in wide sections of the World Wide Web. Especially UFW is also known as „Uncomplicated Firewall“ and an interface to the well-known iptables. It is particularly well-suited for host-based firewalls and provides an easy-to-use interface for beginner users who are rather unfamiliar with firewall concepts. UFW is the most-popular firewall tool originating from Ubuntu and supports both IPv4 and IPv6.</p>
+
+<p>To configure our UFW on the freshly-installed machine, use the following commands according to the needed TCP/UDP-ports for Nextcloud AIO. First, UFW is installed, then the different ports are being opened while the last command enables UFW at boot time.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install ufw -y
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow ssh
+sudo ufw allow 3478/tcp
+sudo ufw allow 3478/udp
+sudo ufw allow 8080/tcp
+sudo ufw allow 8443/tcp
+ufw enable
+
+</code></pre></div></div>
+
+<p>SSH is optional here but is needed to connect to my VPS remotely while especially port 8443 is elementary for Nextcloud’s AIO web interface. You may tighten the security aspects in a more granular way later, possibly supported by tools like Fail2Ban, but this shouldn’t be part of this tutorial. Speaking generally, you should know which ports should be opened in a live system being accessed from the Internet - the choice is yours!</p>
+
+<p><img src="../images/nextcloud-office-document-sidebar.jpg" alt="" /></p>
+
+<p>On the machine, there is a specific user we work with as running containers (or doing anything else) with the root-user often is not the best idea. So head over to your system, log in with the desired user and install the Docker-engine first as this is the minimum prerequisite to get everything running:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -fsSL get.docker.com | sudo sh
+
+</code></pre></div></div>
+
+<p>To run Docker as a non-privileged user, we should consider setting up the <a href="https://docs.docker.com/go/rootless/">Docker daemon in rootless mode</a> for our specific user but, before, he needs to be sudo.</p>
+
+<p>To achieve sudo-permissions for our service-user which is, for example, named „nextcloud-svc“, enter the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adduser nextcloud-svc
+usermod -aG sudo nextcloud-svc
+
+</code></pre></div></div>
+
+<p>Then switch to the specific user by typing:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su - nextcloud-svc
+
+</code></pre></div></div>
+
+<p>and secure your docker service which is finally done installing the desired additional package by the command</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install -y uidmap
+
+</code></pre></div></div>
+
+<p>followed by</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dockerd-rootless-setuptool.sh install
+
+</code></pre></div></div>
+
+<p>and exporting the named environment variables</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export XDG_RUNTIME_DIR=/home/nextcloud-svc/.docker/run
+export PATH=/usr/bin:$PATH
+export DOCKER_HOST=unix:///home/nextcloud-svc/.docker/run/docker.sock
+
+</code></pre></div></div>
+
+<p>once - additionally, you may also add those to your .bashrc-file manually.</p>
+
+<p>People who prefer to go with the standard-Docker-packages delivered by Ubuntu’s standard repository just need to enter</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install docker.io
+</code></pre></div></div>
+
+<p>instead, installing all necessary packages this way - the choice is yours!</p>
+
+<p>After taking care of those prerequisites, let’s finally pull the latest Nextcloud AIO-base image from the <a href="https://hub.docker.com/r/nextcloud/all-in-one">official Docker-repository</a> which may take a short amount of time, depending upon your Internet connection:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker pull nextcloud/all-in-one:latest
+
+</code></pre></div></div>
+
+<p>To fire the basic container up and start everything for the very first time, use the command</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># For x64 CPUs:
+sudo docker run -it \
+--name nextcloud-aio-mastercontainer \
+--restart always \
+-p 80:80 \
+-p 8080:8080 \
+-p 8443:8443 \
+--volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
+--volume /var/run/docker.sock:/var/run/docker.sock:ro \
+nextcloud/all-in-one:latest
+</code></pre></div></div>
+
+<p>which also enables a persistent restart of all containers after, for example, a reboot of the host system.</p>
+
+<h2 id="basic-configuration">Basic Configuration</h2>
+
+<p>After the containers are up and running, we may now head to our preferred browser and enter the fully-qualified domain name of the server as a https-string followed by port 8080, for example while ignoring the possible certificate error yet:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cloud.my-domain.tld:8080
+
+</code></pre></div></div>
+
+<p>The integrated ACME-process will now instantly fetch a Let’s Encrypt-certificate and welcome you with an initial setup-screen delivering initial credentials for your Nextcloud AIO-login, needed to install your private cloud.</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-11.42.16.jpg" alt="" /></p>
+
+<p>Follow the link and enter those credentials.</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-11.44.37.jpg" alt="" /></p>
+
+<p>Following the installation process, you may now enter the fully-qualified domain name your Nextcloud-instance should be running with which is, in my case, also cloud.my-domain.tld.</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-11.46.35.jpg" alt="" /></p>
+
+<p>This ensures this domain to be added into Nextcloud’s „trusted hosts“-configuration and enables you to head on in the next screen where the containers can be started for the first time.</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-11.46.44.jpg" alt="" /></p>
+
+<p>All specific containers will be fetched here - this can take a lot of time depending on your Internet connection. Since the overall size is a few GB, this will take around 5-10 min or more so be aware and patient while the circle does its work!</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-11.47.59.jpg" alt="" /></p>
+
+<h2 id="further-configuration">Further configuration</h2>
+
+<p>After a short while, you should see a status page showing your final and initial Administrator-login and password to your freshly created Nextcloud-instance. Write down those credentials and alter them as soon as possible, for example by just changing the password or creating a new, differently-named Administrator to prevent strange people from trying to guess the password for the usual „admin“-login!</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-11.54.42.jpg" alt="" /></p>
+
+<p>Besides, you see all containers and their statuses (clicking on „Running“ shows the specific log of each container) and while you get familiar with this interface, you may also add a path for the integrated backup-solutions and submit this basic parameter. Once this has been done, the instance will present you an encryption password for backups which you should write down, too. Please save this at a safe place since you won’t be able to restore from backup if you lose this password! The contents of the backup are all important data of your Nextcloud AIO-instance like the database, your files and configuration files of the master-container and (quite) everything else!</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-12.04.27.jpg" alt="" /></p>
+
+<p>Once there is a major update for Nextcloud AIO, you may also refresh the components from this page which is, token-based, always accessible from your official Nextcloud-backend once you work with an user that has administrative permissions.</p>
+
+<h2 id="your-nextcloud-docker-ized">Your Nextcloud, Docker-ized!</h2>
+
+<p>After doing that much work in the background, you may now head to your Nextcloud AIO’s final URL which listens at Port 443, so venturing to</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://cloud.my-domain.tld
+
+</code></pre></div></div>
+
+<p>will instantly lead you to your complete Docker-ized Nextcloud-instance. Use the administrative credentials shown above to enter your own private cloud and configure it to suit your needs. While Nextcloud Office and Talk are already preconfigured and running, there are still tons of <a href="https://apps.nextcloud.com/">apps</a> to extend your Nextcloud with!</p>
+
+<p>All checks within your Nextcloud should be okay despite of the warning regarding the „mission default phone region“. As you cannot alter Nextcloud’s config directly like you would in a non-Docker-based installation, firing the command</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker exec -it nextcloud-aio-nextcloud php occ config:system:set default_phone_region --value="yourvalue"
+
+</code></pre></div></div>
+
+<p>will suit your needs while my value would be „de“ for „Germany“ here - and with issuing this command, the one, only and last warning regarding your freshly-installed Nextcloud AIO-instance should have disappeared!</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-13.10.56.jpg" alt="" /></p>
+
+<p>Generally, you may always use</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker exec -it nextcloud-aio-nextcloud php occ your-command
+
+</code></pre></div></div>
+
+<p>to work with the well-known „occ“-command whereas „your-command“ should - of course - be replaced with the parameter you want to work with. We see: Even if Docker-ized, we still have the ability of working with the tools we know from „usual“ instances so far, having the chance to affect our installation in the ways we like to!</p>
+
+<h2 id="verdict">Verdict</h2>
+
+<p>The solution came nearly out of the nowhere and has been already very, very active on <a href="https://github.com/nextcloud/all-in-one">GitHub</a> lately. Still being labeled as „Beta“-software which may still have serious bugs while usage is at one’s own risk, Nextcloud AIO has reached a grade of near-to-perfection within the first days since release and is currently still versioned 0.2.1 while deploying latest Nextcloud 23.0.1.</p>
+
+<p>The Docker-containers seem to be perfectly balanced and configured, the overall performance is blazing fast and even outperforms the way I built my Nextcloud over the years… manually! The big pro according to my use case if that both High Performance Backends (for Files as well as Talk) are implemented from the scratch as well while especially the nasty and distributed configuration of Talk, Signaling und the High Performance Backend is just fully-functional after the initial installation. Even with my best efforts, I often struggled and - seemingly - never achieved to get this running by 100% with my manual install!</p>
+
+<p><img src="../images/Bildschirmfoto-2021-12-05-um-14.05.31.jpg" alt="" /></p>
+
+<p>Tech-savvy or not, here I decided to put my own „How-to-install-and-tweak-Nextcloud“-scenario aside and got engaged with this kind of deployment in no time. I was already a fan of Docker while fueling my Office-integration with Collabora Online] and ONLYOFFICE but this Docker-construct is a clear sign that the container-technology does not save time, but also comes with unbelievable flexibility. Yes, Nextcloud AIO is still entitled as „Beta“ but together with the well-known vivid community and the leading contributors <a href="https://github.com/szaimen">szaimen</a>, <a href="https://github.com/LukasReschke">Lukas Reschke</a>, <a href="https://github.com/pestotoast">Adrian Gebhart</a>, <a href="https://github.com/AlexanderProd">Alexander Hörl</a> and <a href="https://github.com/ph00lt0">ph00lt0</a>, this project is - besides my long-time sympathy for Nextcloud - surely one of the greatest Docker-projects I have found in the last years!</p>
+
+<p>You may find the GitHub-repository <a href="https://github.com/nextcloud/all-in-one">here</a> while the Docker Hub-page can be found <a href="https://hub.docker.com/r/nextcloud/all-in-one">here</a> - give it a try and pull the container, it’s definitely worth the few minutes of time getting a Nextcloud which is near-to-perfection!</p>
+
+<p class="note">Did you enjoy this post? Share it with a friend!</p>
+
+<p class="tip">Follow me on <a href="https://metalized.net/@oliver">Mastodon</a>. All my other links are available on <a href="https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5">Keyoxide</a>!</p>
+
+<p class="important">If you’d like to say hi, my contact information is <a href="https://me.pifferi.io">here</a>!</p>
+
+<p class="warning">If this post resonated with you, leave a comment in any way!</p>
+
+        </div>
+      </article>
+
+      <div class="share">
+  <div class="share__title">Share this:</div>
+  <ul class="share__list list-reset">
+    <li class="share__item">
+      <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://thebinaryjournal.com/deploying-your-own-docker-ized-nextcloud-hub-ii-instance-in-no-time&amp;media=https://thebinaryjournal.com/images/grouppic2019.jpg&amp;description=Deploying%20your%20own%20Docker-ized%20Nextcloud%20Hub%20II-instance%20in%20no%20time"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest"
+      rel="nofollow"><i class="fa-brands fa-pinterest"></i></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://thebinaryjournal.com/deploying-your-own-docker-ized-nextcloud-hub-ii-instance-in-no-time&title=Deploying%20your%20own%20Docker-ized%20Nextcloud%20Hub%20II-instance%20in%20no%20time&summary=&source="
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+    </li>
+  </ul>
+</div>
+      <div class="post__navigation">
+  
+  <div class="post__prev">
+    
+    <a href="/carrying-the-weight-of-the-world-on-your-shoulders" class="prev__image">
+      
+      <img class="lazy" data-src="/images/photo-1584636633449-6135be6c4169.jpg" alt="Deploying your own Docker-ized Nextcloud Hub II-instance in no time">
+    </a>
+    
+    <div class="prev__box">
+      <span class="post__nav__prev">Older post</span>
+      <h2 class="post__nav__title"><a href="/carrying-the-weight-of-the-world-on-your-shoulders">Carrying the weight of the world on your shoulders</a></h2>
+    </div>
+  </div>
+  
+
+  
+  <div class="post__next">
+    <div class="next__box">
+      <span class="post__nav__next">Newer post</span>
+      <h2 class="post__nav__title"><a href="/vaultwarden-your-guide-to-your-self-hosted-bitwarden-password-vault">Vaultwarden: Your guide to your self-hosted Bitwarden password vault</a></h2>
+    </div>
+    
+    <a href="/vaultwarden-your-guide-to-your-self-hosted-bitwarden-password-vault" class="next__image">
+      
+      <img class="lazy" data-src="/images/Bitwarden_Intro.png" alt="Deploying your own Docker-ized Nextcloud Hub II-instance in no time">
+    </a>
+    
+  </div>
+  
+</div>
+      
+      
+
+
+
+
+
+<div class="related-posts is-related">
+  <div class="section__info">
+    <div class="section__head">
+      <h2 class="section__title">Related</h2>
+    </div>
+  </div>
+  <div class="view-list">
+
+  
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/spring-cleaning-tidying-up-your-mastodon-instance">
+        <img class="lazy" data-src="/images/mastodon_hero.jpg" alt="Spring Cleaning - Tidying up your Mastodon-instance">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=linux"
+          class="article__tag" style="background: var(--dark-gray);">
+          Linux
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/spring-cleaning-tidying-up-your-mastodon-instance">Spring Cleaning - Tidying up your Mastodon-instance</a>
+      </h2>
+
+      <p class="article__excerpt">### After six months of running a small, two user Mastodon-instance, I was astonished to see the media growth over the time so it was way overdue to reflect ...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2024-02-25T00:00:00+01:00">25 Feb, 2024</time>
+        <div class="article__minutes">
+          
+          
+            5 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/how-to-upgrade-debian11-bullseye-to-debian-12-bookworm">
+        <img class="lazy" data-src="/images/debian12.jpg" alt="How to upgrade Debian 11 Bullseye to Debian 12 Bookworm">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=linux"
+          class="article__tag" style="background: var(--dark-gray);">
+          Linux
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/how-to-upgrade-debian11-bullseye-to-debian-12-bookworm">How to upgrade Debian 11 Bullseye to Debian 12 Bookworm</a>
+      </h2>
+
+      <p class="article__excerpt">### Yesterday, the latest iteration of Debian Linux in version 12, codename „Bookworm“ was [released](https://www.debian.org/releases/bookworm/). Everyone of...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2023-06-11T00:00:00+02:00">11 Jun, 2023</time>
+        <div class="article__minutes">
+          
+          
+            5 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/how-to-install-php-82-on-debian-11">
+        <img class="lazy" data-src="/images/debian_with_php.jpg" alt="How to install PHP 8.2 on Debian 11">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=linux"
+          class="article__tag" style="background: var(--dark-gray);">
+          Linux
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/how-to-install-php-82-on-debian-11">How to install PHP 8.2 on Debian 11</a>
+      </h2>
+
+      <p class="article__excerpt">### Although Debian is a modern Linux-distribution based upon stability, it sometimes misses actual packages like the latest PHP-iteration.
+
+[Debian][1] 11, ...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2022-12-28T00:00:00+01:00">28 Dec, 2022</time>
+        <div class="article__minutes">
+          
+          
+            3 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+          
+  </div>
+</div>
+    </div>
+
+    <div class="col col-4 col-d-12">
+      <aside class="sidebar">
+        
+        
+<div class="widget widget-social">
+  <ul class="widget-social__list list-reset">
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+        aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+        aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+        aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="/feed.xml" target="_blank" rel="noopener"
+        aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+
+
+
+        
+<div class="widget widget-tags">
+  <div class="widget-sidebar-head">
+    <h2 class="widget-sidebar-title">Topics</h2>
+  </div>
+
+  <div class="tag-cloud">
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=history"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        History
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=internet"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Internet
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=apple"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Apple
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=security"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Security
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=thoughts"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Thoughts
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=linux"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Linux
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=music"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Music
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=software"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Software
+      </a>
+    
+  </div>
+</div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- end post -->
+    </main>
+    <!-- end content -->
+
+    <!-- begin footer -->
+<footer class="footer">
+
+  <div class="footer__inner">
+    <div class="container">
+      <div class="row">
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__info__title">The Binary Journal</h3>
+          
+          <p class="footer__info__description">Here, I share my thoughts, news and tutorials while keeping control over my digital world and my own mind in real life. Dive in, get inspired and feel free to join me on this digital and analog trip!</p>
+          
+          
+          <div class="footer__social">
+            <ul class="footer__social__list list-reset">
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+                  aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+                  aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+                  aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="/feed.xml" target="_blank" rel="noopener"
+                  aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__title">Recent Posts</h3>
+          <div class="footer__recent-posts">
+            
+            <div class="footer__recent-content">
+              
+              <a href="/digital-independence-day-march" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/digital_independence_day.jpg" alt="The third Digital Independence Day in 2026">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/digital-independence-day-march">The third Digital Independence Day in 2026</a></h3>
+                <time class="footer__recent-date" datetime="2026-03-01T00:00:00+01:00">01 Mar, 2026</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/andrew-neel-hZkOZGtlA5w-unsplash.jpg" alt="How to skip the ChatGPT for Mac waiting list and get access now">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now">How to skip the ChatGPT for Mac waiting list and get access now</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-26T00:00:00+02:00">26 May, 2024</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/vmware-kills-players-makes-pro-free-for-personal-use" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/fusion-ws-heroes-1.jpg" alt="VMware kills Players, makes Pro free for personal use">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/vmware-kills-players-makes-pro-free-for-personal-use">VMware kills Players, makes Pro free for personal use</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-14T00:00:00+02:00">14 May, 2024</time>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+        <div class="col col-2 col-d-6 col-m-12">
+          <div class="footer-nav__left">
+            <h3 class="footer__title">Menu</h3>
+            <div class="footer-nav__list">
+            
+            
+              <a class="footer-nav__link" href="/">Home</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/archive/">Archive</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/contact/">Contact</a>
+            
+            
+            </div>
+          </div>
+        </div>
+        
+
+        
+        
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="copyright">2026 &copy; <a href="/">The Binary Journal</a>. General pictures - unless stated otherwise - gratefully taken from the wonderful <a href="https://unsplash.com">unsplash.com.</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- end footer -->
+  </div>
+  <!-- end global wrap -->
+
+  <div class="top" title="Top"><i class="fa-solid fa-arrow-up"></i></div>
+
+  <div class="images-overlay"></div>
+
+  <script src="/js/scripts.js"></script>
+  <script src="/js/common.js"></script>
+</body>
+
+</html>
