@@ -312,6 +312,17 @@ Backing my Nextcloud-installation as a standard database, MariaDB is...</p><div 
     } ,
   
     {
+      "title"    : "I finally escaped Facebook - and I am happy with that",
+      "category" : "",
+      "tags"     : "Internet",
+      "url"      : "/I-finally-escaped-Facebook-and-I-am-happy-with-that",
+      "date"     : "Nov 7, 2021",
+      "article"  : "<div class='article article--flexible'><div class='article__inner'><div class='article__head'><a class='article__image' href='/I-finally-escaped-Facebook-and-I-am-happy-with-that'><img src='/images/photo-1568378780196-a9a0444a9151.jpg' alt='I finally escaped Facebook - and I am happy with that' loading='lazy'></a></div><div class='article__content'><div class='article__tags'><a href='/tags/?tag=internet' class='article__tag' style='background: var(--dark-gray);'>Internet</a></div><h2 class='article__title'><a href='/I-finally-escaped-Facebook-and-I-am-happy-with-that'>I finally escaped Facebook - and I am happy with that</a></h2><p class='article__excerpt'>Some days ago, I had my thoughts on why Facebook won’t be „The Metaverse“. Now I made the break with the service after 17 years.
+
+Within 17 years, a lot chan...</p><div class='article__meta'><time class='article__date' datetime='2021-11-07T00:00:00+01:00'>07 Nov, 2021</time><div class='article__minutes'>5 min read</div></div></div></div></div>"
+    } ,
+  
+    {
       "title"    : "Installing the latest version of PostgreSQL on Ubuntu Linux",
       "category" : "",
       "tags"     : "Linux",
@@ -331,6 +342,28 @@ In this scenario given, my Ubuntu 20.0...</p><div class='article__meta'><time cl
       "article"  : "<div class='article article--flexible'><div class='article__inner'><div class='article__head'><a class='article__image' href='/even-with-a-new-name-facebook-wont-be-the-metaverse'><img src='/images/photo-1549813069-f95e44d7f498.jpg' alt='Even with a new name, Facebook won‘t be 'The Metaverse'' loading='lazy'></a></div><div class='article__content'><div class='article__tags'><a href='/tags/?tag=internet' class='article__tag' style='background: var(--dark-gray);'>Internet</a></div><h2 class='article__title'><a href='/even-with-a-new-name-facebook-wont-be-the-metaverse'>Even with a new name, Facebook won‘t be 'The Metaverse'</a></h2><p class='article__excerpt'>According to a report from The Verge, Facebook is reportedly planning to rename the company to better underline its focus on „The Metaverse“.
 
 We all know th...</p><div class='article__meta'><time class='article__date' datetime='2021-10-21T00:00:00+02:00'>21 Oct, 2021</time><div class='article__minutes'>7 min read</div></div></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "I am stuck -  Writer’s Block or just Silly Season?",
+      "category" : "",
+      "tags"     : "Thoughts",
+      "url"      : "/I-am-stuck-writers-block-or-just-silly-season",
+      "date"     : "Oct 16, 2021",
+      "article"  : "<div class='article article--flexible'><div class='article__inner'><div class='article__head'><a class='article__image' href='/I-am-stuck-writers-block-or-just-silly-season'><img src='/images/1-VsNzos-TrV_sOvvCkid5Nw.jpg' alt='I am stuck -  Writer’s Block or just Silly Season?' loading='lazy'></a></div><div class='article__content'><div class='article__tags'><a href='/tags/?tag=thoughts' class='article__tag' style='background: var(--dark-gray);'>Thoughts</a></div><h2 class='article__title'><a href='/I-am-stuck-writers-block-or-just-silly-season'>I am stuck -  Writer’s Block or just Silly Season?</a></h2><p class='article__excerpt'>After a week off in Norway, I still haven’t found my writing routine again. What has changed?
+
+This week in September was a journey of three guys making a br...</p><div class='article__meta'><time class='article__date' datetime='2021-10-16T00:00:00+02:00'>16 Oct, 2021</time><div class='article__minutes'>4 min read</div></div></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Is Apple’s construction of privacy crumbling?",
+      "category" : "",
+      "tags"     : "Apple",
+      "url"      : "/Is-Apples-construction-of-privacy-crumbling",
+      "date"     : "Sep 21, 2021",
+      "article"  : "<div class='article article--flexible'><div class='article__inner'><div class='article__head'><a class='article__image' href='/Is-Apples-construction-of-privacy-crumbling'><img src='/images/1-fesvs4EfrrGTg6RVKZDAww.jpg' alt='Is Apple’s construction of privacy crumbling?' loading='lazy'></a></div><div class='article__content'><div class='article__tags'><a href='/tags/?tag=apple' class='article__tag' style='background: var(--dark-gray);'>Apple</a></div><h2 class='article__title'><a href='/Is-Apples-construction-of-privacy-crumbling'>Is Apple’s construction of privacy crumbling?</a></h2><p class='article__excerpt'>Last Thursday, Apple announced details of upcoming features designed to detect CSAM - and the world reacted.
+
+While the idea of protecting infants by flaggin...</p><div class='article__meta'><time class='article__date' datetime='2021-09-21T00:00:00+02:00'>21 Sep, 2021</time><div class='article__minutes'>11 min read</div></div></div></div></div>"
     } ,
   
     {

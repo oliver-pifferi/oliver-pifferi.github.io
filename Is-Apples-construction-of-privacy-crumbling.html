@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Is Apple’s construction of privacy crumbling?</title>
+  <meta name='description' content='Beyond the Algorithm - Stories of a Digital Soul'>
+
+  <link rel="canonical" href="https://thebinaryjournal.com/Is-Apples-construction-of-privacy-crumbling">
+  <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Is Apple’s construction of privacy crumbling? – The Binary Journal">
+  <meta name="twitter:description" content="Last Thursday, Apple announced details of upcoming features designed to detect CSAM - and the world reacted.
+">
+  <meta name="twitter:image:src" content="https://thebinaryjournal.com/images/1-fesvs4EfrrGTg6RVKZDAww.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Is Apple’s construction of privacy crumbling? – The Binary Journal">
+  <meta property="og:description" content="Last Thursday, Apple announced details of upcoming features designed to detect CSAM - and the world reacted.
+">
+  <meta property="og:image" content="https://thebinaryjournal.com/images/1-fesvs4EfrrGTg6RVKZDAww.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+  <script>
+    const defaultTheme = "dark";
+    const isToggleEnabled = true;
+    const userTheme = localStorage.getItem("theme");
+
+    function setTheme(mode) {
+      if (mode === "dark") {
+        document.documentElement.setAttribute("dark", "");
+        document.documentElement.classList.add("dark-mode");
+      } else if (mode === "light") {
+        document.documentElement.removeAttribute("dark");
+        document.documentElement.classList.remove("dark-mode");
+      }
+    }
+
+    if (isToggleEnabled) {
+      if (userTheme) {
+        setTheme(userTheme);
+      } else {
+        setTheme(defaultTheme);
+      }
+    } else {
+      setTheme(defaultTheme);
+    }
+
+    if (localStorage.getItem("classView") === "list") {
+      document.documentElement.setAttribute("list", "");
+      document.documentElement.classList.add('view-list');
+    }
+  </script>
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  
+
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+    <!-- begin header -->
+<header class="header">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            The Binary Journal
+          
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <div class="main-nav__box">
+            <ul class="nav__list list-reset">
+              
+              
+              <li class="nav__item">
+                <a href="/" class="nav__link">Home</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/archive/" class="nav__link">Archive</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="/contact/" class="nav__link">Contact</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+
+        <div class="nav-button">
+          
+          <div class="color-scheme-button">
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72"/>
+                </svg>
+              </div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                    <path stroke-linecap="round" d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15"/>
+                    <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z"/>
+                    <path stroke-linecap="round" d="M24 45v-3.15"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="search-button">
+            <svg class="search-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+            <span class="search-button__text">Search posts...</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- begin search -->
+<div class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search__box">
+          <div class="search__group">
+            <i class="search__close fa-solid fa-xmark"></i>
+            <label for="js-search-input" class="screen-reader-text">Search for Blog</label>
+            <input type="text" id="js-search-input" class="search__text" autocomplete="off"
+              placeholder="Type to search...">
+          </div>
+          <div class="search-results-list view-list" id="js-results-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search__overlay"></div>
+</div>
+<!-- end search -->
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      <!-- begin post -->
+<div class="container">
+
+  <div class="row">
+    <div class="col col-8 col-d-12">
+
+      <div class="post-head">
+
+        
+        
+        <div class="post-image">
+          <img class="lazy" data-src="/images/1-fesvs4EfrrGTg6RVKZDAww.jpg" alt="Is Apple’s construction of privacy crumbling?">
+        </div>
+        
+        
+
+        <div class="post-info">
+          
+          <div class="post-tags">
+            
+            <a href="/tags/?tag=apple" class="post-tag"
+              style="background: var(--dark-gray);">Apple</a>
+            
+          </div>
+          
+
+          <h1 class="post-title">Is Apple’s construction of privacy crumbling?</h1>
+
+          <div class="post-meta">
+            <a href="/about/" class="post-meta__image">
+              <img class="lazy" data-src="/images/01-1.jpg"
+                alt="Oliver Pifferi">
+            </a>
+
+            <div class="post-meta__content">
+              <a class="post-meta__author" href="/about/">Oliver Pifferi</a>
+              <div class="post-meta__bottom">
+                <time class="post-date" datetime="2021-09-21T00:00:00+02:00">21 Sep, 2021</time> –
+                <span class="post-minutes">
+                  
+                   11 min read  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <article class="post">
+        <div class="post__content">
+          
+
+          <h3 id="last-thursday-apple-announced-details-of-upcoming-features-designed-to-detect-csam---and-the-world-reacted">Last Thursday, Apple announced details of upcoming features designed to detect CSAM - and the world reacted.</h3>
+
+<p>While the idea of protecting infants by flagging CSAM (Child Sexual Abuse Material) is basically a good and welcomed thought, Apple seems to have forgotten the ethical aspects that come along with each technical solution this time, especially when putting the terms of „privacy“ in capital letters. „<a href="https://www.apple.com/privacy/">Privacy</a>“ is an elementary building block of the sum of reasons we use Apple-devices and Cupertino is founded upon. Putting FBI-hacks and Pegasus-news aside (worthy of yet some other discussions), this case could drastically destroy the user’s trust in Apple’s devices, making a mockery of the use of „Privacy“ related to Cupertino.</p>
+
+<blockquote>
+  <p>„Privacy is a fundamental human right. At Apple, it’s also one of our core values. Your devices are important to so many parts of your life. What you share from those experiences, and who you share it with, should be up to you. We design Apple products to protect your privacy and give you control over your information. It’s not always easy. But that’s the kind of innovation we believe in.“</p>
+</blockquote>
+
+<p>(Excerpt from <a href="https://www.apple.com/privacy/">https://www.apple.com/privacy</a>)</p>
+
+<div class="embed-container">
+    <iframe width="640" height="390" src="https://www.youtube.com/embed/8w4qPUSG17Y" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+<h3 id="my-apple-story-so-far">My Apple-story so far</h3>
+
+<p>I have been an Apple-user for approximately twenty years now. Everything started with the first iMac and - later - the PowerMac G4 MDD. I loved the iPod once I could afford one in earlier days. I switched to a PowerMac G5 until the first transition from PowerPC to Intel began and possessed MacBooks of all kind, still love the design of the 27“ iMac and experienced a lot before the latest transition to the M1-SoC. The latter was surely on of the biggest changes in Apple’s lineup and with my iPhone over the years, I already adopted the first iPad and many things from Cupertino. Most were good, some were failures - but mainly, I learned to rely on Mac OS X and macOS, my solid foundation for all my work and hobbies. I consider myself to be an Apple-Fanboy but I also utter my criticism when I need to - and deciding which material on user’s devices is good or bad is surely one of the few predictive failures Apple may make.</p>
+
+<p><img src="../images/2018-oliver-cupertino.jpg" alt="Apple doing quite bad PR in this case" /></p>
+
+<p>Over the years, I often tried to work with Android but although I love the idea behind it, the lacking update support in earlier days and Google striving for even more user data repelled me. I jailbreaked the first Samsung Galaxy, stopped playing around with a Huawei P10 Pro and flashing custom roms, but in the background there was always iOS waiting as it came to mobile devices. After the years of fiddling around, I stopped switching phones half year, knowing that I’d be coming back to the iPhone anyway - at least for the privacy thing that was one of Apple’s biggest pro’s and seemed to even advance in iOS 15. Now, the die is cast and Apple is seemingly going to do something terribly wrong, harming not only its public image but also the reason I always preferred this so called „walled garden“: Apple may crush the term of „Privacy“.</p>
+
+<h3 id="with-great-power-comes-great-responsibility">With great power comes great responsibility</h3>
+
+<p>I am a proud father of four wonderful girls and protecting them offline and online is - parents know this - the highest good and an enormous task. Two of them are old enough to use Apple-devices as their basic phones, supervised and equipped with <a href="https://www.jamf.com/products/jamf-now/">Jamf Now</a> as MDM-solution and with screen time enabled. The kids have many regulations regarding usage time, age-related content and app-time. While lots of the use case is built upon mutual trust, we agreed that carrying around a small and powerful computer which the ability of being a phone is also a heavy burden. We don’t read chats, we don’t have regular looks on the phone but we agreed that we may do this whenever we want in presence of the child.</p>
+
+<p><img src="../images/apple_privacy_chris.jpg" alt="https://twitter.com/chrisvelazco/status/1081330848262062080" /></p>
+
+<p>For us, it is a good deal and the kids pay back this „advance money“ of trust by asking us whenever there is anything with the devices. Besides, we need to agree each App store-purchased anyway so we may also question the installation of certain apps. We talked about the „Cloud“ being a remote storage to save your files onto and the threats of dangers when it comes to creating accounts, acknowledging EULA’s without knowing what they may mean (hello, WhatsApp!) and storing personal data in places you finally cannot control. For now it works and the thin line between protection and harassment is always present, but basically they know their tech-savvy dad is trying to protect them as long as he can.</p>
+
+<p>So far for the online world - the offline world looks similar but seems less complex: „Give a call when you’ve arrived at your friend’s location“, „don’t enter cars from foreign persons“ or „don’t talk to strangers“ are basics each parent will inculcate into his/her kid’s minds. It’s not easy but neither is raising a child and protecting it from all harm. While we had to do this offline years ago, the online world is clearly more sophisticated and needs a different approach - an approach that Apple is, fortunately or not, deciding to change for its users by baking some more Artificial Intelligence (AI) and hashes into iOS 15.</p>
+
+<h3 id="what-has-happened">What has happened?</h3>
+
+<p>You may call it „shitstorm“ and, to be honest, this phrase is the nicest way to describe what has happened during the last days.</p>
+
+<p><img src="../images/apple_privacy_matthew.jpg" alt="https://twitter.com/matthew_d_green/status/1423071186616000513" /></p>
+
+<p>In the latest announcement, Apple is told to develop a suite of features across its platforms aimed at protecting children online, including a system that can detect child abuse material in iCloud while seemingly preserving user-privacy.</p>
+
+<p><img src="../images/apple_privacy_snowden.jpg" alt="https://twitter.com/Snowden/status/1423751484081070081" /></p>
+
+<p>When even Edward Snowden enqueued as well as the <a href="https://www.eff.org/deeplinks/2021/08/apples-plan-think-different-about-encryption-opens-backdoor-your-private-life">Electronic Frontier Foundation</a>, you can assume that there is imminent danger in this certain case and - to anticipate the issue - the news may change the way we think and work with Apple-devices. When people create an <a href="https://appleprivacyletter.com">Open Letter</a> against Apple’s Privacy-Invasive Content Scanning Technology (which I have <a href="https://github.com/nadimkobeissi/appleprivacyletter/issues/new?assignees=nadimkobeissi&amp;labels=signature&amp;template=sign-letter.yml&amp;title=%5BSIGN%5D+Your+Name+Here">signed</a>, too), you can bet that the world is upset and ready to ground the institution with this certain idea.</p>
+
+<p>While the basics behind Apple’s <a href="https://www.apple.com/child-safety/">announcement</a>, delivering expanded protection for children, is - by no means - serving a good point, the possible realization is definitely alien to the subject in its whole and could fuel the fear that the big tech-companies define and control our digital connection to and in the future. Being a multi-pronged effort, Apple’s system uses „classic“ on-device processing to detect and report CSAM-images uploaded to iCloud Photos, as well as protect children from sensitive images sent through Messages. The question is - who decides when to put a ceiling on this feature? Seemingly, it will be without the user’s control, built upon the result of hashes and databases far from the user’s reach.</p>
+
+<p><img src="../images/1-jbEIJxyoKa3fzKJAEoqHRQ.jpg" alt="How this stuff may work — Photo Credits: Apple" /></p>
+
+<h3 id="bypassing-e2ee">Bypassing E2EE?</h3>
+
+<p>After implementation, Apple’s system will hash and match user photos against a hashed database of known CSAM. The process is told to be accomplished on-device before upload and only applies to images sent to iCloud. A second tool uses on-device machine learning to protect children under the age of 17 from viewing sexually explicit images in Messages. Parents can choose to be notified when children under 13 years old send or receive such content. What sounds like a reasonable idea in the beginning, gets tricky afterwards as, according to the letter, Apple’s techniques creates an issue because they bypass end-to-end encryption.</p>
+
+<p><img src="../images/1-2t5nxvoKhzf2UQQ5IjnSiQ.jpg" alt="How this stuff may work — Photo Credits: Apple" /></p>
+
+<p>“Because both checks are performed on the user’s device, they have the potential to bypass any end-to-end encryption that would otherwise safeguard the user’s privacy,” the letter <a href="https://appleprivacyletter.com/">argues</a>. Viewed from its own perspective, Apple has gone on record as saying the new safety protocols do not create a backdoor to its hardware and software privacy features - while the obvious shines through: We may get introduced into a technology that starts with CSAM-prevention but who can predict where it may stop? Being pessimistic, Apple’s realm of of privacy my crumble by making the decision for users which content is valid and which isn’t. A point of vantage for governments trying to spy on single persons or groups? Maybe.</p>
+
+<p>The fact of scanning cloud-based files like images is indeed not new and happens automated (see a <a href="https://www.bbc.com/news/technology-28682686">OneDrive-case</a> reported by the BBC), but the extents Apple plans to implement go even further. Microsoft’s terms and conditions for its US-users for example explicitly state that it has the right to deploy “automated technologies to detect child pornography or abusive behavior that might harm the system, our customers, or others”. Besides theoretically ditching End-to-End-encryption (which is the failure by design), the misuse of the technology is in sight and no one can predict where this feature may lead us to!</p>
+
+<p><img src="../images/1-aH0TCLHLAOySKH_uNa1pLw.jpg" alt="Even Siri is involved — Photo Credits: Apple" /></p>
+
+<p>The letter continues to include commentary and criticism from a range of experts including Matthew Green, a cryptography professor at Johns Hopkins University who was among the first to voice concern over the implications of Apple’s measures. Green and Snowden are counted among the signatories, which currently lists approximately 34 organizations and 6203 individuals at the time of writing who digitally inked this letter via <a href="https://github.com/nadimkobeissi/appleprivacyletter/issues/new?assignees=nadimkobeissi&amp;labels=signature&amp;template=sign-letter.yml&amp;title=%5BSIGN%5D+Your+Name+Here">GitHub</a>. Accompanying with a halt to implementation, the letter requests that Apple issues a statement “reaffirming their commitment to end-to-end encryption and to user privacy.” So far, the world is waiting for this commitment and although I support the basic idea behind this move as a proud and caring father, the extents of implementing this technology may turn our mobile world into a horrible dystopia.</p>
+
+<h3 id="quo-vadis-apple">Quo Vadis, Apple?</h3>
+
+<p>No matter what Apple plans and does with iOS 15, Apple should re-think this strategy which could advance to become a carte blanche to do everything with the user’s devices: Flagging CSAM may be the first step, but with implementing this feature, the door for mass surveillance in its worst extents will be opened just like Pandora’s box. This may not only change the way we interact with hard- and software but ruin all privacy-related efforts Apple ever preached - and the company’s public image for all time.</p>
+
+<p>Should this be true, Apple’s statement in the famous „1984“-commercial could turn into a tragic 21st-century parody. A dangerous parody that may act as legalized government spyware with the hypothetical chance of being adopted to suit any other demand than to scan for CSAM. The empire of the clouds may be crumbling and so may Apple’s efforts in creating a secure and private environment for people who trusted Cupertino over all those years - including myself.</p>
+
+<p>„And you’ll see why 1984 won’t be like 1984“…</p>
+
+<div class="embed-container">
+    <iframe width="640" height="390" src="https://www.youtube.com/embed/VtvjbmoDx-I&amp;t" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+<p>Think about it, Cupertino - stakes are high and so is the risk of a completely ruined reputation!</p>
+
+<p class="note">Did you enjoy this post? Share it with a friend!</p>
+
+<p class="tip">Follow me on <a href="https://metalized.net/@oliver">Mastodon</a>. All my other links are available on <a href="https://keyoxide.org/AF953733C09F6368797CA49E2F4968B5F7988AA5">Keyoxide</a>!</p>
+
+<p class="important">If you’d like to say hi, my contact information is <a href="https://me.pifferi.io">here</a>!</p>
+
+<p class="warning">If this post resonated with you, leave a comment in any way!</p>
+
+        </div>
+      </article>
+
+      <div class="share">
+  <div class="share__title">Share this:</div>
+  <ul class="share__list list-reset">
+    <li class="share__item">
+      <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://thebinaryjournal.com/Is-Apples-construction-of-privacy-crumbling&amp;media=https://thebinaryjournal.com/images/1-fesvs4EfrrGTg6RVKZDAww.jpg&amp;description=Is%20Apple%E2%80%99s%20construction%20of%20privacy%20crumbling?"
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest"
+      rel="nofollow"><i class="fa-brands fa-pinterest"></i></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://thebinaryjournal.com/Is-Apples-construction-of-privacy-crumbling&title=Is%20Apple%E2%80%99s%20construction%20of%20privacy%20crumbling?&summary=&source="
+      onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+    </li>
+  </ul>
+</div>
+      <div class="post__navigation">
+  
+  <div class="post__prev">
+    
+    <a href="/apple-iclouds-custom-domain-feature-is-secretly-available-now" class="prev__image">
+      
+      <img class="lazy" data-src="/images/1-F0KcgyUX8TDQLkc60ZqAZA.jpg" alt="Is Apple’s construction of privacy crumbling?">
+    </a>
+    
+    <div class="prev__box">
+      <span class="post__nav__prev">Older post</span>
+      <h2 class="post__nav__title"><a href="/apple-iclouds-custom-domain-feature-is-secretly-available-now">Apple: iCloud’s custom domain feature is — secretly — available now!</a></h2>
+    </div>
+  </div>
+  
+
+  
+  <div class="post__next">
+    <div class="next__box">
+      <span class="post__nav__next">Newer post</span>
+      <h2 class="post__nav__title"><a href="/I-am-stuck-writers-block-or-just-silly-season">I am stuck -  Writer’s Block or just Silly Season?</a></h2>
+    </div>
+    
+    <a href="/I-am-stuck-writers-block-or-just-silly-season" class="next__image">
+      
+      <img class="lazy" data-src="/images/1-VsNzos-TrV_sOvvCkid5Nw.jpg" alt="Is Apple’s construction of privacy crumbling?">
+    </a>
+    
+  </div>
+  
+</div>
+      
+      
+
+
+
+
+
+<div class="related-posts is-related">
+  <div class="section__info">
+    <div class="section__head">
+      <h2 class="section__title">Related</h2>
+    </div>
+  </div>
+  <div class="view-list">
+
+  
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now">
+        <img class="lazy" data-src="/images/andrew-neel-hZkOZGtlA5w-unsplash.jpg" alt="How to skip the ChatGPT for Mac waiting list and get access now">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=apple"
+          class="article__tag" style="background: var(--dark-gray);">
+          Apple
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now">How to skip the ChatGPT for Mac waiting list and get access now</a>
+      </h2>
+
+      <p class="article__excerpt">### This month, OpenAI has [released the native ChatGPT-app for macOS alongside GPT-4o](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/). Any...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2024-05-26T00:00:00+02:00">26 May, 2024</time>
+        <div class="article__minutes">
+          
+          
+            2 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/apple-locks-users-out-of-their-apple-ids-without-explanation">
+        <img class="lazy" data-src="/images/zhiyue-7DOU5NlNIcE-unsplash.jpg" alt="Apple locks users out of their Apple IDs without explanation">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=apple"
+          class="article__tag" style="background: var(--dark-gray);">
+          Apple
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/apple-locks-users-out-of-their-apple-ids-without-explanation">Apple locks users out of their Apple IDs without explanation</a>
+      </h2>
+
+      <p class="article__excerpt">### "Security" and "big tech" are two terms that don't go well together at the moment. After ongoing security issues at Microsoft, Apple seems to have at lea...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2024-04-27T00:00:00+02:00">27 Apr, 2024</time>
+        <div class="article__minutes">
+          
+          
+            5 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+      
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+      <div class="article article--flexible">
+  <div class="article__inner">
+
+    
+    <div class="article__head">
+      
+
+      <a class="article__image" href="/how-to-fix-seemingly-disabled-apple-pay-on-macos">
+        <img class="lazy" data-src="/images/rubaitul-azad-JIpwo285mWA-unsplash.jpg" alt="How to fix seemingly disabled Apple Pay on macOS">
+      </a>
+    </div>
+    
+
+    <div class="article__content">
+
+      
+      <div class="article__tags">
+        
+        <a href="/tags/?tag=apple"
+          class="article__tag" style="background: var(--dark-gray);">
+          Apple
+        </a>
+        
+      </div>
+      
+
+      <h2 class="article__title">
+        <a href="/how-to-fix-seemingly-disabled-apple-pay-on-macos">How to fix seemingly disabled Apple Pay on macOS</a>
+      </h2>
+
+      <p class="article__excerpt">### There aren't many glitches with macOS in my common use cases but lately and after migrating my user from one Mac to the other, I realized that, seemingly...</p>
+
+      <div class="article__meta">
+        <time class="article__date" datetime="2023-10-25T00:00:00+02:00">25 Oct, 2023</time>
+        <div class="article__minutes">
+          
+          
+            2 min read
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+        
+          
+  </div>
+</div>
+    </div>
+
+    <div class="col col-4 col-d-12">
+      <aside class="sidebar">
+        
+        
+<div class="widget widget-social">
+  <ul class="widget-social__list list-reset">
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+        aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+        aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+        aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+    </li>
+    
+    <li class="widget-social__item">
+      <a class="widget-social__link" href="/feed.xml" target="_blank" rel="noopener"
+        aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+        
+
+
+
+        
+<div class="widget widget-tags">
+  <div class="widget-sidebar-head">
+    <h2 class="widget-sidebar-title">Topics</h2>
+  </div>
+
+  <div class="tag-cloud">
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=history"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        History
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=internet"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Internet
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=apple"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Apple
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=security"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Security
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=thoughts"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Thoughts
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=linux"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Linux
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=music"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Music
+      </a>
+    
+      
+      
+      
+
+      
+
+      <a href="/tags/?tag=software"
+         class="tag-cloud__item"
+         style="background: var(--dark-gray);">
+        Software
+      </a>
+    
+  </div>
+</div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- end post -->
+    </main>
+    <!-- end content -->
+
+    <!-- begin footer -->
+<footer class="footer">
+
+  <div class="footer__inner">
+    <div class="container">
+      <div class="row">
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__info__title">The Binary Journal</h3>
+          
+          <p class="footer__info__description">Here, I share my thoughts, news and tutorials while keeping control over my digital world and my own mind in real life. Dive in, get inspired and feel free to join me on this digital and analog trip!</p>
+          
+          
+          <div class="footer__social">
+            <ul class="footer__social__list list-reset">
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://github.com/oliver-pifferi" target="_blank" rel="noopener"
+                  aria-label="Github link"><i class="fa-brands fa-github"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://metalized.net/@oliver" target="_blank" rel="noopener"
+                  aria-label="Mastodon link"><i class="fa-brands fa-mastodon"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="https://wanderingpixels.eu/@oliver" target="_blank" rel="noopener"
+                  aria-label="Vernissage link"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              
+              <li class="footer__social__item">
+                <a class="footer__social__link" href="/feed.xml" target="_blank" rel="noopener"
+                  aria-label="Rss link"><i class="fa-solid fa-rss"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+
+        <div class="col col-4 col-d-12">
+          <h3 class="footer__title">Recent Posts</h3>
+          <div class="footer__recent-posts">
+            
+            <div class="footer__recent-content">
+              
+              <a href="/digital-independence-day-march" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/digital_independence_day.jpg" alt="The third Digital Independence Day in 2026">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/digital-independence-day-march">The third Digital Independence Day in 2026</a></h3>
+                <time class="footer__recent-date" datetime="2026-03-01T00:00:00+01:00">01 Mar, 2026</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/my-default-apps-starting-2026" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/karine-avetisyan-ipuiM-36tAg-unsplash.jpg" alt="My default apps starting 2026">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/my-default-apps-starting-2026">My default apps starting 2026</a></h3>
+                <time class="footer__recent-date" datetime="2026-01-08T00:00:00+01:00">08 Jan, 2026</time>
+              </div>
+            </div>
+            
+            <div class="footer__recent-content">
+              
+              <a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now" class="footer__recent-image">
+                
+                <img class="lazy" data-src="/images/andrew-neel-hZkOZGtlA5w-unsplash.jpg" alt="How to skip the ChatGPT for Mac waiting list and get access now">
+              </a>
+              
+              <div class="footer__recent-meta">
+                <h3 class="footer__recent-title"><a href="/how-to-skip-the-chatgpt-for-mac-waiting-list-and-get-access-now">How to skip the ChatGPT for Mac waiting list and get access now</a></h3>
+                <time class="footer__recent-date" datetime="2024-05-26T00:00:00+02:00">26 May, 2024</time>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        
+        <div class="col col-2 col-d-6 col-m-12">
+          <div class="footer-nav__left">
+            <h3 class="footer__title">Menu</h3>
+            <div class="footer-nav__list">
+            
+            
+              <a class="footer-nav__link" href="/">Home</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/archive/">Archive</a>
+            
+            
+            
+              <a class="footer-nav__link" href="/contact/">Contact</a>
+            
+            
+            </div>
+          </div>
+        </div>
+        
+
+        
+        
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="copyright">2026 &copy; <a href="/">The Binary Journal</a>. General pictures - unless stated otherwise - gratefully taken from the wonderful <a href="https://unsplash.com">unsplash.com.</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- end footer -->
+  </div>
+  <!-- end global wrap -->
+
+  <div class="top" title="Top"><i class="fa-solid fa-arrow-up"></i></div>
+
+  <div class="images-overlay"></div>
+
+  <script src="/js/scripts.js"></script>
+  <script src="/js/common.js"></script>
+</body>
+
+</html>
